@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description"
+    content="Jerry Selinin portfoliosivut. Jerry on skeittari, sovelluskehittäjä ja vaikka mitä muuta.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Jerry Selin">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <title>Jerry Selin</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <h1 id="isPageWorking">Loading...</h1>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+
+  <script>
+    /**
+     *    Check if the canvas has been rendered after couple of seconds.
+     *    Remove h1 if yes, otherwise update h1 text
+     */
+    setTimeout(
+      function () {
+
+        var flutterSupport = document.querySelector("flt-scene") !== null;
+        var isWorkingElement = document.getElementById('isPageWorking');
+        if (flutterSupport) {
+          isWorkingElement.outerHTML = "";
+        }
+        else {
+          isWorkingElement.innerHTML = "Loading takes a lot of time...";
+          setTimeout(
+            function () {
+
+              var flutterSupport = document.querySelector("flt-scene") !== null;
+              if (flutterSupport) {
+                isWorkingElement.parentNote.removeChild(isWorkingElement);
+              }
+              else {
+
+                isWorkingElement.innerHTML = "Loading has taken a lot of time and the page didn't open correctly.<br/><br/>First check your internet connection,<br/>if connection is working, you might want to use better browser.<br/><br/>2020 onward releases of Chrome, Firefox, Edge and Safari should be good.";
+                var linkToSupportedBrowsers = document.createElement('a');
+                linkToSupportedBrowsers.href = "https://flutter.dev/docs/development/platform-integration/web#which-web-browsers-are-supported-by-flutter"
+                linkToSupportedBrowsers.innerHTML = "Find out why and see list of browsers"
+                isWorkingElement.parentNode.insertBefore(linkToSupportedBrowsers, isWorkingElement.nextSibling);
+                var alternativeSites = document.createElement('h2');
+                alternativeSites.innerHTML = "Or just check my works behind these links:"
+                linkToSupportedBrowsers.parentNode.insertBefore(alternativeSites, linkToSupportedBrowsers.nextSibling);
+                var linkList = document.createElement('ul');
+                linkList.innerHTML = '<li><a href=https://spottimetta.fi>Spottimettä</a></li>'
+                + '<li><a href=https://data.spottimetta.fi>Data Spottimettä (statistics from Spottimettä apps)</a></li>'
+                + '<li><a href=https://spotforest.com>Spotforest (Mobile & web apps)</a></li>'
+                + '<li><a href=https://distantskate.com>Distant S.K.A.T.E. (Mobile apps)</a></li>'
+                + '<li><a href=https://napalmcustom.com>Napalm Custom skateboards</a></li>'
+                + '<li><a href=https://www.youtube.com/channel/UCkqvtxhI1RNz8VGO2nVyCPw>Youtube</a></li>'
+                + '<li><a href=https://www.instagram.com/jerryselin/>Instagram</a></li>'
+                + '<li><a href=https://github.com/paivanjerry>Github</a></li>'
+                
+                alternativeSites.parentNode.insertBefore(linkList, alternativeSites.nextSibling);
+              }
+            }, 3000);
+        }
+      }, 3000);
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+
+</html>
