@@ -1,3 +1,7 @@
+/// Video player that uses url
+/// Plying, for example, Instagram videos
+///
+
 import 'package:flutter/cupertino.dart';
 import 'package:video_player/video_player.dart';
 import 'package:flutter/material.dart';

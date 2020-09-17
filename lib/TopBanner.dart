@@ -2,7 +2,6 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:jerryselin/pages/OtherPage.dart';
 import 'package:jerryselin/pages/SkateVideoPage.dart';
 

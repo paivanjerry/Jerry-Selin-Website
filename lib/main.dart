@@ -15,7 +15,7 @@ void main() {
         path: 'assets/translations',
         fallbackLocale: Locale('en'),
         child: MyApp()
-    ),
+    )
   );
 }
 

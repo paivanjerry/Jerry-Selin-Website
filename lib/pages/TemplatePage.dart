@@ -1,9 +1,10 @@
+/// Template page for new route
+/// Use this as a template that contains all boilerplate for web page
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'package:jerryselin/MyAppBar.dart';
 import 'package:jerryselin/MobileNavigation.dart';
-
 import 'package:jerryselin/TitleHelper.dart';
 
 class TemplatePage extends StatefulWidget {

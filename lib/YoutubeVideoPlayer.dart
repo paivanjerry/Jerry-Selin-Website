@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
-class ExternalVideoPlayer extends StatefulWidget {
+class YoutubeVideoPlayer extends StatefulWidget {
   @override
-  _ExternalVideoPlayerState createState() => _ExternalVideoPlayerState();
+  _YoutubeVideoPlayerState createState() => _YoutubeVideoPlayerState();
 
   final id;
 
-  ExternalVideoPlayer({this.id}) : super();
+  YoutubeVideoPlayer({this.id}) : super();
 }
 
-class _ExternalVideoPlayerState extends State<ExternalVideoPlayer> {
+class _YoutubeVideoPlayerState extends State<YoutubeVideoPlayer> {
   YoutubePlayerController _controller;
 
 

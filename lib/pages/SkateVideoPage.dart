@@ -2,7 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:jerryselin/ExternalVideoPlayer.dart';
+import 'package:jerryselin/YoutubeVideoPlayer.dart';
 import 'package:jerryselin/MobileNavigation.dart';
 import 'package:jerryselin/MyAppBar.dart';
 
@@ -91,31 +91,31 @@ class _SkateVideoPageState extends State<SkateVideoPage> {
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(20.0),
-                                child: ExternalVideoPlayer(
+                                child: YoutubeVideoPlayer(
                                   id: "iUQUBfTcy4A",
                                 ),
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(20.0),
-                                child: ExternalVideoPlayer(
+                                child: YoutubeVideoPlayer(
                                   id: "DLt9fkXZA0Y",
                                 ),
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(20.0),
-                                child: ExternalVideoPlayer(
+                                child: YoutubeVideoPlayer(
                                   id: "VUHGYFlNaUM",
                                 ),
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(20.0),
-                                child: ExternalVideoPlayer(
+                                child: YoutubeVideoPlayer(
                                   id: "Zw09Aaq3Sb8",
                                 ),
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(20.0),
-                                child: ExternalVideoPlayer(
+                                child: YoutubeVideoPlayer(
                                   id: "DHZO-FqhsmM",
                                 ),
                               ),
