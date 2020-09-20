@@ -64,6 +64,7 @@ class _BannerState extends State<TopBanner> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(10),
       child: Column(
         children: [
           MouseRegion(
@@ -154,8 +155,8 @@ class _BannerState extends State<TopBanner> {
                   _bannerHover = false;
                 });},
                 child: Container(
-                    width: MediaQuery.of(context).size.width / 3,
-                    height: (MediaQuery.of(context).size.width / 3) * IMG_RES,
+                    width: (MediaQuery.of(context).size.width / 3) -20 ,
+                    height: ((MediaQuery.of(context).size.width / 3) -20 ) * IMG_RES,
                     child: Image.asset(
                       "assets/images/jerry" + _bannerMode.toString() + ".png",
                       fit: BoxFit.fill,

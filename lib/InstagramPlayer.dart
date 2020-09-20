@@ -1,26 +1,33 @@
-/// Video player that uses url
-/// Plying, for example, Instagram videos
-///
+import 'dart:convert';
+
+/// Video player for Instagram
+
 
 import 'package:flutter/cupertino.dart';
 import 'package:video_player/video_player.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'dart:html' as html;
 
-class VideoPlayerWidget extends StatefulWidget {
+class InstagramPlayer extends StatefulWidget {
   @override
-  _VideoPlayerWidgetState createState() => _VideoPlayerWidgetState();
-  final vidUrl;
-
-  VideoPlayerWidget({this.vidUrl}) : super();
+  _InstagramPlayerState createState() => _InstagramPlayerState();
+  // Instagram data url is website url + /?__a=1
+  // Send GET request and look for video_url key
+  final String pageUrl;
+  InstagramPlayer({ @required this.pageUrl}) : super();
 }
 
-class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
+class _InstagramPlayerState extends State<InstagramPlayer> {
   VideoPlayerController _controller;
+
 
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.network(widget.vidUrl)
+
+
+    _controller = VideoPlayerController.network("")
       ..addListener(() => setState(() {
             videoPosition = _controller.value.position;
           }))
@@ -28,6 +35,7 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
             videoLength = _controller.value.duration;
             _controller.setLooping(!_controller.value.isLooping);
           }));
+    fetchVideo();
   }
 
   Duration videoLength;
@@ -40,6 +48,22 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
       child: SingleChildScrollView(
         child: Column(
           children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.only(
+                  top: 40.0, bottom: 10, left: 5, right: 5),
+              child: InkWell(
+                  onTap: () {
+                    html.window.open(
+                        widget.pageUrl,
+                        "Jerry Selin Instagram Video");
+                  },
+                  child: Text(
+                    widget.pageUrl.replaceAll("https://www.", "").replaceAll("https://", ""),
+                    style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.lightBlueAccent),
+                  )),
+            ),
             if (_controller.value.initialized) ...[
               AspectRatio(
                 aspectRatio: _controller.value.aspectRatio,
@@ -111,6 +135,39 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
     super.dispose();
     _controller.dispose();
   }
+
+  Future<void> fetchVideo() async {
+    if(widget.pageUrl == null){
+      print("No page url provided to IG video");
+      return;
+    }
+    http.Response res = await http.get(widget.pageUrl + "?__a=1");
+    if(res.statusCode != 200){
+      return;
+    }
+    String resBody = res.body;
+    final jsonBody = jsonDecode(resBody);
+    var shortMedia = jsonBody["graphql"]["shortcode_media"];
+    String vid = "";
+    if(shortMedia.containsKey("video_url")){
+      vid = shortMedia["video_url"];
+    }
+    else{
+      // Many videos/images in post, try to get first video, fails if it's img...
+      vid = shortMedia["edge_sidecar_to_children"]["edges"][0]["node"]["video_url"];
+    }
+
+    setState(() {
+      _controller = VideoPlayerController.network(vid)
+        ..addListener(() => setState(() {
+          videoPosition = _controller.value.position;
+        }))
+        ..initialize().then((_) => setState(() {
+          videoLength = _controller.value.duration;
+          _controller.setLooping(!_controller.value.isLooping);
+        }));
+    });
+  }
 }
 
 String convertToMinutesSeconds(Duration duration) {
@@ -133,3 +190,4 @@ IconData animatedVolumeIcon(double volume) {
   else
     return Icons.volume_up;
 }
+

@@ -11,7 +11,7 @@ class TitleHelper {
     String routeName = prevRoute.settings.name;
     String title = routeToTitle[routeName];
     SystemChrome.setApplicationSwitcherDescription(ApplicationSwitcherDescription(
-        label: tr(title)
+        label: tr(title) ?? ""
     ));
 }
   void refreshTitle(){
@@ -19,7 +19,7 @@ class TitleHelper {
     String routeName = prevRoute.settings.name;
     String title = routeToTitle[routeName];
     SystemChrome.setApplicationSwitcherDescription(ApplicationSwitcherDescription(
-        label: tr(title)
+        label: tr(title) ?? ""
     ));
   }
 }

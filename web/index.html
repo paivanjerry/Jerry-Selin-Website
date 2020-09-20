@@ -22,7 +22,8 @@
 
 <body>
 
-  <h1 id="isPageWorking">Loading...</h1>
+  <h1 id="isPageWorking"></h1>
+
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
@@ -36,7 +37,14 @@
      *    Check if the canvas has been rendered after couple of seconds.
      *    Remove h1 if yes, otherwise update h1 text
      */
-    setTimeout(
+     setTimeout(
+    function() {
+      var flutterSupport = document.querySelector("flt-scene") !== null;
+      var isWorkingElement = document.getElementById('isPageWorking');
+      if (!flutterSupport) {
+          isWorkingElement.innerHTML = "Loading...";
+        
+      setTimeout(
       function () {
 
         var flutterSupport = document.querySelector("flt-scene") !== null;
@@ -48,10 +56,10 @@
           isWorkingElement.innerHTML = "Loading takes a lot of time...";
           setTimeout(
             function () {
-
               var flutterSupport = document.querySelector("flt-scene") !== null;
+              var isWorkingElement = document.getElementById('isPageWorking');
               if (flutterSupport) {
-                isWorkingElement.parentNote.removeChild(isWorkingElement);
+                isWorkingElement.outerHTML = "";
               }
               else {
 
@@ -75,10 +83,12 @@
                 
                 alternativeSites.parentNode.insertBefore(linkList, alternativeSites.nextSibling);
               }
-            }, 3000);
+            }, 3000); // Third timer to add alternative page that notifies about problem
         }
-      }, 3000);
-  </script>
+      }, 3000); // Second timer to add "Loading takes a lot of time..." text
+ }
+    }, 2000); // First timer to add "Loading..."" text
+   </script>
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 
