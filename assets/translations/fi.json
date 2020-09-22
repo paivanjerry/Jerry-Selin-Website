@@ -10,5 +10,25 @@
   "ig_highlights": "Poimintoja Instagram videoista",
   "other": "Muu",
   "jerryselin": "Jerry Selin",
-  "Jerry Selin": "Jerry Selin"
+  "Jerry Selin": "Jerry Selin",
+  "skatepark_building": "Skeittipaikkojen rakentaminen",
+  "skatepark_building_desc": "Skeittikamojen rakentelu on ollut lähellä sydäntä yhtä kauan kuin itse skeittaus.\n Omatekemiä obstaakkeleita on mukavampi skeitata ja silloin on mahdollista saada yhtä kiero palikka kuin tekijän mielikuvitus. Aluksi rakennetut obstaakkelit sijoittuivat vanhempien terassille. 2016 vuodesta asti skeittiobstaakkeleita ollaan rakennettu Tampereen (teknillisen) yliopiston tiloissa sijaitsevaan Bommariin. Paluu alkulähteelle tapahtui kun rakensimme minirampin vanhempien terassille 2020. Tässä välissä tuli oltua mukana ja haettua oppia Ylöjärven Wake Valleyn minirampin rakentamisen kautta.",
+  "parent_mini": "Vanhempien terassilla sijaitseva miniramppi",
+  "bommari": "Bommari",
+  "wake_valley": "Ylöjärven Wake Valley",
+  "welcome": "Hiiohoi ja halojatapäivää!",
+  "welcome_long": "Tervetuloa linjoille, mun nimi on Jerry Selin. Mulla on tapana kasata itelleni erilaisia projekteja vähän turhankin paljon. Tämä luultavasti siksi, koska kaikenlainen tekeminen ja uuden oppiminen kiinnostaa. Jotkut projektit ovat saatu selätettyä onnistuneesti, kun taas jotkut ovat jääneet piristämään elämää ja pitämään kiireisenä. Molempien kategorioiden töitä alkaa olla jo mukava pinkka, joten päätin keräillä niistä parhaimmistoa tänne. Tutustu, inspiroidu & toteuta!",
+  "ar": "Instagramin AR-filtterit",
+  "giphy": "Animoidut tarrat mm. Instagramiin",
+  "3d_modelling": "3D mallinnus",
+  "3d_printing": "3D tulostus",
+  "photo_editing": "Valokuvien muokkaaminen ja piirtäminen tietokoneella",
+  "video_editing": "Videoiden muokkaaminen",
+  "electronics": "Elektroniikka",
+  "events": "Tapahtumien järjestäminen",
+  "3d_modelling_desc": "Skeittiparkkeja olenpiirtänyt muutaman SketchUpilla. Vastapainoksi suurinpiirtein mitoille ja viivojen lisäilyn avulla piirtelyyn, 3d printattujen kappaleiden mallit olen tehnyt poikkeuksessa OnShape, SolidWorks ja NX CAD ohjelmilla.",
+  "events_desc": "Tapahtumien järjestäminen on tapahtunut pääsääntöisesti TTHP:n (Tampereen Teekkarien Hiihto- ja Purjehdusseura) kautta. Tämän lisäksi usein organisoin pienempiä tapahtumia kuten skeittihallin vuokrausta kavereiden kanssa. Myös seuraavat tapahtumajulisteet ovat omaa tuotantoani.",
+  "student": "Opiskelija",
+  "student_desc": "Opiskelen Tietotekniikan ylempää korkeakoulututkintoa Tampereen Yliopistossa (ent. TTY)."
+
 }

@@ -2,14 +2,14 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:jerryselin/YoutubeVideoPlayer.dart';
-import 'package:jerryselin/MobileNavigation.dart';
-import 'package:jerryselin/MyAppBar.dart';
+import 'package:jerryselin/components/YoutubeVideoPlayer.dart';
+import 'package:jerryselin/components/MobileNavigation.dart';
+import 'package:jerryselin/components/MyAppBar.dart';
 
 import 'package:jerryselin/TitleHelper.dart';
 import 'dart:html' as html;
 
-import 'package:jerryselin/InstagramPlayer.dart';
+import 'package:jerryselin/components/InstagramPlayer.dart';
 
 class SkateVideoPage extends StatefulWidget {
   static const String route = '/skatevideos';
@@ -167,35 +167,35 @@ class _SkateVideoPageState extends State<SkateVideoPage> {
                             children: [
 
                               Container(
-                                width: MediaQuery.of(context).size.width * 0.6,
+                                width: MediaQuery.of(context).size.width > 900 ? 900 :  MediaQuery.of(context).size.width * 0.95 ,
                                 child: InstagramPlayer(
                                   pageUrl:
                                       "https://www.instagram.com/p/CCv_nVjlFXk/",
                                 ),
                               ),
                               Container(
-                                width: MediaQuery.of(context).size.width * 0.6,
+                                width: MediaQuery.of(context).size.width > 900 ? 900 :  MediaQuery.of(context).size.width * 0.95 ,
                                 child: InstagramPlayer(
                                   pageUrl:
                                       "https://www.instagram.com/p/B-T6Mbjl3EL/",
                                 ),
                               ),
                               Container(
-                                width: MediaQuery.of(context).size.width * 0.6,
+                                width: MediaQuery.of(context).size.width > 900 ? 900 :  MediaQuery.of(context).size.width * 0.95 ,
                                 child: InstagramPlayer(
                                   pageUrl:
                                       "https://www.instagram.com/p/B8wc-CulBAF/",
                                 ),
                               ),
                               Container(
-                                width: MediaQuery.of(context).size.width * 0.6,
+                                width: MediaQuery.of(context).size.width > 900 ? 900 :  MediaQuery.of(context).size.width * 0.95 ,
                                 child: InstagramPlayer(
                                   pageUrl:
                                       "https://www.instagram.com/p/B-jqUjml-BP/",
                                 ),
                               ),
                               Container(
-                                width: MediaQuery.of(context).size.width * 0.6,
+                                width: MediaQuery.of(context).size.width > 900 ? 900 :  MediaQuery.of(context).size.width * 0.95 ,
                                 child: InstagramPlayer(
                                   pageUrl:
                                       "https://www.instagram.com/p/CBNcR3MlaND/",
@@ -206,7 +206,7 @@ class _SkateVideoPageState extends State<SkateVideoPage> {
                         ),
                       ),
                       Container(
-                        height: 200,
+                        height: 100,
                       )
                     ],
                   ),

@@ -3,8 +3,8 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:jerryselin/MyAppBar.dart';
-import 'package:jerryselin/MobileNavigation.dart';
+import 'package:jerryselin/components/MyAppBar.dart';
+import 'package:jerryselin/components/MobileNavigation.dart';
 import 'package:jerryselin/TitleHelper.dart';
 
 class TemplatePage extends StatefulWidget {
