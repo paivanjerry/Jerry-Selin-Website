@@ -22,14 +22,37 @@ class _MainPageState extends State<MainPage> {
     super.initState();
   }
 
+  bool cachedOtherPage = false;
+
+  @override
+  void didChangeDependencies() {
+    Future.delayed(Duration(seconds: 3), () {
+      print("CAHCEIMAGEE");
+      if (cachedOtherPage) {
+        return;
+      }
+      precacheImage(AssetImage("assets/images/bommari.png"), context);
+      precacheImage(AssetImage("assets/images/bommarikyosti.jpg"), context);
+      precacheImage(AssetImage("assets/images/wakevalley.png"), context);
+      precacheImage(AssetImage("assets/images/annala.png"), context);
+      precacheImage(AssetImage("assets/images/distantskatelogo.png"), context);
+      precacheImage(AssetImage("assets/images/selinbroes.jpg"), context);
+      precacheImage(AssetImage("assets/images/selinpixar.jpg"), context);
+      precacheImage(AssetImage("assets/images/rona.jpg"), context);
+
+      cachedOtherPage = true;
+    });
+    super.didChangeDependencies();
+  }
+
   @override
   Widget build(BuildContext context) {
-
     DateTime now = new DateTime.now();
-    DateTime nextBDay =DateTime.parse(now.year.toString() + "-09-18 00:00:00Z");
+    DateTime nextBDay =
+        DateTime.parse(now.year.toString() + "-09-18 00:00:00Z");
     Duration myAge = now.difference(DateTime.parse("1996-09-18 00:00:00Z"));
     int daysTillBDay = nextBDay.difference(now).inDays;
-    if(daysTillBDay < 0){
+    if (daysTillBDay < 0) {
       daysTillBDay = 365 + daysTillBDay;
     }
     double w = MediaQuery.of(context).size.width > 800
@@ -70,7 +93,7 @@ class _MainPageState extends State<MainPage> {
                   width: w,
                   padding: EdgeInsets.only(top: 50),
                   child: Text(
-                    "How old are you?",
+                    tr("how_old"),
                     style: TextStyle(
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.bold,
@@ -81,28 +104,55 @@ class _MainPageState extends State<MainPage> {
                   width: w,
                   padding: EdgeInsets.only(top: 10),
                   child: RichText(
-
                     text: TextSpan(
-                      // Note: Styles for TextSpans must be explicitly defined.
-                      // Child text spans will inherit styles from parent
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.black,
                       ),
                       children: <TextSpan>[
-                        TextSpan(text: 'Thank you for asking. I am '),
-                        TextSpan(text: (myAge.inDays ~/ 365).toString(), style: new TextStyle(fontWeight: FontWeight.bold)),
-                        TextSpan(text: ' years old and my birthday is just around the corner, only '),
-                        TextSpan(text: daysTillBDay.toString(), style: new TextStyle(fontWeight: FontWeight.bold)),
-                        TextSpan(text: ' days remaining. Remember to get me a nice present.'),
-
+                        TextSpan(text: tr("bday1")),
+                        TextSpan(
+                            text: (myAge.inDays ~/ 365).toString(),
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                        TextSpan(text: tr("bday2")),
+                        TextSpan(
+                            text: daysTillBDay.toString(),
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                        TextSpan(text: tr("bday3")),
                       ],
                     ),
                   ),
                 ),
-                Container(height: 50,)
+                Container(
+                  width: w,
+                  padding: EdgeInsets.only(top: 50),
+                  child: Text(
+                    tr("how_you_learned"),
+                    style: TextStyle(
+                        fontStyle: FontStyle.italic,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25),
+                  ),
+                ),
+                Container(
+                  width: w,
+                  padding: EdgeInsets.only(top: 10),
+                  child: RichText(
+                    text: TextSpan(
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black,
+                      ),
+                      children: <TextSpan>[
+                        TextSpan(text: tr("how_you_learned_answer")),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  height: 50,
+                )
               ],
-
             ),
           )),
     );

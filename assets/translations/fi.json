@@ -26,9 +26,29 @@
   "video_editing": "Videoiden muokkaaminen",
   "electronics": "Elektroniikka",
   "events": "Tapahtumien järjestäminen",
-  "3d_modelling_desc": "Skeittiparkkeja olenpiirtänyt muutaman SketchUpilla. Vastapainoksi suurinpiirtein mitoille ja viivojen lisäilyn avulla piirtelyyn, 3d printattujen kappaleiden mallit olen tehnyt poikkeuksessa OnShape, SolidWorks ja NX CAD ohjelmilla.",
+  "3d_modelling_desc": "Skeittiparkkien piirtämiseen omasta mielestäni varsin ässä työkalu on SketchUp. Sillä olenkin jokusen parkin piirrellyt. Vastapainoksi suurinpiirtein mitoille ja viivojen lisäilyn avulla piirtelyyn, 3d printattujen kappaleiden mallit olen tehnyt poikkeuksessa OnShape, SolidWorks ja NX CAD ohjelmilla.",
   "events_desc": "Tapahtumien järjestäminen on tapahtunut pääsääntöisesti TTHP:n (Tampereen Teekkarien Hiihto- ja Purjehdusseura) kautta. Tämän lisäksi usein organisoin pienempiä tapahtumia kuten skeittihallin vuokrausta kavereiden kanssa. Myös seuraavat tapahtumajulisteet ovat omaa tuotantoani.",
   "student": "Opiskelija",
-  "student_desc": "Opiskelen Tietotekniikan ylempää korkeakoulututkintoa Tampereen Yliopistossa (ent. TTY)."
+  "student_desc": "Opiskelen Tietotekniikan ylempää korkeakoulututkintoa Tampereen Yliopistossa (ent. TTY).",
+  "electronics_desc_1": "Elektroniikan saralla olen hieman päässyt kokeilemaan kolvia kädessä sekä tunkemaan koodia Arduinon sisään. Omia elektroniikkaprojekteja on mm. nämä:" ,
+  "electronics_desc_2": "pahvista ja ilmastointiteipistä valmistettu ",
+  "electronics_desc_3": "bluetooth matkakajari",
+  "electronics_desc_4": ", joka on myöhemmin päällystetty auton yliteippaukseen suunnitellulla hiilikuituteipillä.",
+  "electronics_desc_5": "Saunamaatti",
+  "electronics_desc_6": ", eli WiFi Arduino, servomoottori ja koodinpätkä yhdistettynä. Tästä syntynyt lopputulos on web palvelin, joka pystyy laittamaan saunan päälle tai pois päältä." ,
+  "giphy_desc": "Giphy palveluun lisättyjä gif kuvia. Nämä ovat saatavilla Instagram, Snapchat, Telegram appeissa sekä monissa muissa sovelluksissa, jotka käyttävät Giphya.",
+  "how_old": "Kuinka vanha olet?",
+  "ar_desc": "Satunnaisen skeittispotin ja skeittitempun generoivat taulut, jotka sijoittuvat käyttäjän pään yläpuolelle. Näiden tekemiseen käytetty Spark AR Studio ohjelmaa.",
+  "bday1": "Kiitos kysymästä, olen ",
+  "bday2": " vuotias. Itse asiassa mun synttärit on aivan nurkan takana ja niihin on enää ",
+  "bday3": " päivää jäljellä. Kai oot muistanu hommata mulle kivan lahjan?",
+  "how_you_learned": "Miten oot oppinu tekeen kaiken tän?",
+  "how_you_learned_answer": "Käytän interneettiä, sieltä löytää apua kaikkeen. Loppu on vaan innostuksesta kiinni.",
+  "scroll_top": "Rullaa alkuun",
+  "open_skatevideos": "Siirry skeittivideot sivulle",
+  "open_developer": "Siirry sovelluskehittäjä sivulle",
+  "open_entrepreneur": "Siirry yrittäjyys sivulle",
+  "open_jackofalltrades": "Siirry muiden projektien sivulle"
+
 
 }

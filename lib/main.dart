@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:jerryselin/pages/DeveloperPage.dart';
+import 'package:jerryselin/pages/EntrepreneurPage.dart';
 import 'package:jerryselin/pages/MainPage.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:jerryselin/pages/OtherPage.dart';
@@ -34,6 +36,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => MainPage(),
         '/skatevideos': (context) => SkateVideoPage(),
         '/other': (context) => OtherPage(),
+        '/developer': (context) => DeveloperPage(),
+        '/entrepreneur': (context) => EntrepreneurPage(),
       },
       theme: ThemeData(
         fontFamily: 'Lato',

@@ -19,6 +19,8 @@ class SkateVideoPage extends StatefulWidget {
 }
 
 class _SkateVideoPageState extends State<SkateVideoPage> {
+  ScrollController scrollController = ScrollController();
+
   @override
   void initState() {
     SystemChrome.setApplicationSwitcherDescription(
@@ -34,6 +36,15 @@ class _SkateVideoPageState extends State<SkateVideoPage> {
           isBackButton: true,
         ),
         endDrawer: MobileNavigation(),
+        floatingActionButton: new FloatingActionButton(
+          onPressed: () {
+            print(scrollController.offset);
+            scrollController.animateTo(0,
+                duration: Duration(milliseconds: 500), curve: Curves.ease);
+          },
+          tooltip: tr("scroll_top"),
+          child: new Icon(Icons.arrow_upward),
+        ),
         body: WillPopScope(
           onWillPop: () {
             TitleHelper()..changePrevTitle();
@@ -44,6 +55,7 @@ class _SkateVideoPageState extends State<SkateVideoPage> {
               height: MediaQuery.of(context).size.height,
               width: MediaQuery.of(context).size.width,
               child: SingleChildScrollView(
+                controller: scrollController,
                 child: Container(
                   width: MediaQuery.of(context).size.width,
                   color: Colors.black87,
@@ -165,37 +177,46 @@ class _SkateVideoPageState extends State<SkateVideoPage> {
                         child: SingleChildScrollView(
                           child: Column(
                             children: [
-
                               Container(
-                                width: MediaQuery.of(context).size.width > 900 ? 900 :  MediaQuery.of(context).size.width * 0.95 ,
+                                width: MediaQuery.of(context).size.width > 900
+                                    ? 900
+                                    : MediaQuery.of(context).size.width * 0.95,
                                 child: InstagramPlayer(
                                   pageUrl:
                                       "https://www.instagram.com/p/CCv_nVjlFXk/",
                                 ),
                               ),
                               Container(
-                                width: MediaQuery.of(context).size.width > 900 ? 900 :  MediaQuery.of(context).size.width * 0.95 ,
+                                width: MediaQuery.of(context).size.width > 900
+                                    ? 900
+                                    : MediaQuery.of(context).size.width * 0.95,
                                 child: InstagramPlayer(
                                   pageUrl:
                                       "https://www.instagram.com/p/B-T6Mbjl3EL/",
                                 ),
                               ),
                               Container(
-                                width: MediaQuery.of(context).size.width > 900 ? 900 :  MediaQuery.of(context).size.width * 0.95 ,
+                                width: MediaQuery.of(context).size.width > 900
+                                    ? 900
+                                    : MediaQuery.of(context).size.width * 0.95,
                                 child: InstagramPlayer(
                                   pageUrl:
                                       "https://www.instagram.com/p/B8wc-CulBAF/",
                                 ),
                               ),
                               Container(
-                                width: MediaQuery.of(context).size.width > 900 ? 900 :  MediaQuery.of(context).size.width * 0.95 ,
+                                width: MediaQuery.of(context).size.width > 900
+                                    ? 900
+                                    : MediaQuery.of(context).size.width * 0.95,
                                 child: InstagramPlayer(
                                   pageUrl:
                                       "https://www.instagram.com/p/B-jqUjml-BP/",
                                 ),
                               ),
                               Container(
-                                width: MediaQuery.of(context).size.width > 900 ? 900 :  MediaQuery.of(context).size.width * 0.95 ,
+                                width: MediaQuery.of(context).size.width > 900
+                                    ? 900
+                                    : MediaQuery.of(context).size.width * 0.95,
                                 child: InstagramPlayer(
                                   pageUrl:
                                       "https://www.instagram.com/p/CBNcR3MlaND/",

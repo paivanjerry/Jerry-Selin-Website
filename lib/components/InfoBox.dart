@@ -38,7 +38,10 @@ class _InfoBoxState extends State<InfoBox> {
               textAlign: TextAlign.center,
             ),
           ),
-          Text((widget.description ?? ""), style: TextStyle(fontSize: 16),),
+          Text(
+            (widget.description ?? ""),
+            style: TextStyle(fontSize: 17),
+          ),
           Padding(
             padding: const EdgeInsets.only(top: 8.0),
             child: widget.child,
