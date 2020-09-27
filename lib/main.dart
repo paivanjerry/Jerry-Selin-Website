@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
       },
       theme: ThemeData(
         fontFamily: 'Lato',
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple,
 
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),

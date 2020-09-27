@@ -182,6 +182,7 @@ class _BannerState extends State<TopBanner> {
                     )),
               ),
               MouseRegion(
+                cursor: SystemMouseCursors.grabbing,
                 onHover: (event) {
                   setState(() {
                     _bannerHover = true;

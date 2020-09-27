@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 /// Template page for new route
 /// Use this as a template that contains all boilerplate for web page
 
@@ -18,7 +19,7 @@ class _TemplatePageState extends State<TemplatePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: MyAppBar(title: tr("developer"),),
       endDrawer: MobileNavigation(),
       body: WillPopScope(
         onWillPop: (){

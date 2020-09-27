@@ -391,14 +391,6 @@ class _OtherPageState extends State<OtherPage> {
                         ),
                       ),
                     ),
-                    Container(
-                      width: w,
-                      padding: EdgeInsets.only(top: 50, bottom: 50),
-                      child: InfoBox(
-                        title: tr("student"),
-                        description: tr("student_desc"),
-                      ),
-                    ),
                   ],
                 ),
               ),

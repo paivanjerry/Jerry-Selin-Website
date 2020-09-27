@@ -48,7 +48,16 @@
   "open_skatevideos": "Siirry skeittivideot sivulle",
   "open_developer": "Siirry sovelluskehittäjä sivulle",
   "open_entrepreneur": "Siirry yrittäjyys sivulle",
-  "open_jackofalltrades": "Siirry muiden projektien sivulle"
+  "open_jackofalltrades": "Siirry muiden projektien sivulle",
+  "dev_title": "Koodaus alkoi vuonna 2017",
+  "dev_intro_1": "Aloitin automaatiotekniikan opinnot Tampereen Teknillisessä Yliopistossa 2016. Opintoihini sisältyi ohjelmointia pääasiassa C++ käyttäen. Ohjelmointi vaikutti alusta asti kiinnostavalta, kuten monet muutkin opintokokonaisuudet.",
+  "dev_intro_2": "2019 kesällä tein ensimmäisen henkilökohtaisen ohjelmointiprojektin harrastemielessä. Projekti oli Spottimettä Android sovellus. Tuon projektin jälkeen harrasteprojekteja on alkanut kasaantumaan ja ne vievätkin valtaosan vapaa-ajastani. Tästä innostuneena olenkin vaihtanut opiskelemaan tietotekniikkaa.",
+  "dev_intro_end": "Hieman henkilökohtaisia projektejani sekä niissä käytettyjä tekniikoita",
+  "mobile": "Mobiilisovellukset",
+  "web": "Web-sovellukset",
+  "server": "Backend",
+  "what_you_do": "Mitä teet?",
+  "what_you_do_answer": "Olen tietotekniikan opiskelija Tampereen Yliopistossa. Lisäksi työskentelen osa-aikaisena ohjelmistokehittäjänä. Näiden lisäksi toimin myös yrittäjänä."
 
 
 }

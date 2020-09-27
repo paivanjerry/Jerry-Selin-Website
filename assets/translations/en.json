@@ -49,5 +49,16 @@
   "open_skatevideos": "Open skate videos page",
   "open_developer": "Open developer page",
   "open_entrepreneur": "Open entrepreneur page",
-  "open_jackofalltrades": "Open other projects page"
+  "open_jackofalltrades": "Open other projects page",
+  "dev_title": "I started writing code in 2017",
+  "dev_intro_1": "I started studying automation technology at Tampere University of Technology in 2016. I had some programming courses which were taught with C++. I was interested in programming but wasn't sure if I would rather study something else.",
+  "dev_intro_2": "2019 I started to create my first personal project, Android app called Spottimettä. After creating that, personal projects have been filling a lot of my timetable. I also decided that I want to focus on programming and I changed my subject of studying to Information technology.",
+  "dev_intro_end": "Here's some of my personal projects",
+  "mobile": "Mobile apps",
+  "web": "Web apps",
+  "server": "Backend",
+  "what_you_do": "What is your status?",
+  "what_you_do_answer": "I am student in informational technology at Tampere University. I am also working part-time as software developer. In addition to these, I work as a entrepreneur."
+
+
 }

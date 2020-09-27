@@ -10,17 +10,22 @@ class MobileNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+
       child: ListView(
         // Important: Remove any padding from the ListView.
         padding: EdgeInsets.zero,
         children: <Widget>[
-          DrawerHeader(
-            child: Text(
-              tr('navigation'),
-              style: TextStyle(fontSize: 20, color: Colors.white),
-            ),
-            decoration: BoxDecoration(
-              color: Colors.blue,
+          Container(
+
+            child: DrawerHeader(
+
+              child: Text(
+                tr('navigation'),
+                style: TextStyle(fontSize: 20, color: Colors.white),
+              ),
+              decoration: BoxDecoration(
+                color: Colors.deepPurple,
+              ),
             ),
           ),
           ListTile(

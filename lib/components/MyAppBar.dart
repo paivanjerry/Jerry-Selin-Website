@@ -9,8 +9,8 @@ class MyAppBar extends StatefulWidget with PreferredSizeWidget {
   _MyAppBarState createState() => _MyAppBarState();
   final title;
   final isBackButton;
-
-  MyAppBar({this.title, this.isBackButton}) : super();
+  final darkMode;
+  MyAppBar({this.title, this.darkMode = false, this.isBackButton}) : super();
 
   @override
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
@@ -20,8 +20,9 @@ class _MyAppBarState extends State<MyAppBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-        leading: (widget.isBackButton == true) ? BackButton(
-            color: Colors.white
+      backgroundColor: widget.darkMode ? Colors.black : Colors.deepPurple,
+        leading:  (widget.isBackButton == true) ? BackButton(
+            color: widget.darkMode ? Colors.deepPurple : Colors.white
         ) : null,
         title: Center(
             child: Row(

@@ -150,6 +150,32 @@ class _MainPageState extends State<MainPage> {
                   ),
                 ),
                 Container(
+                  width: w,
+                  padding: EdgeInsets.only(top: 50),
+                  child: Text(
+                    tr("what_you_do"),
+                    style: TextStyle(
+                        fontStyle: FontStyle.italic,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25),
+                  ),
+                ),
+                Container(
+                  width: w,
+                  padding: EdgeInsets.only(top: 10),
+                  child: RichText(
+                    text: TextSpan(
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black,
+                      ),
+                      children: <TextSpan>[
+                        TextSpan(text: tr("what_you_do_answer")),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
                   height: 50,
                 )
               ],
