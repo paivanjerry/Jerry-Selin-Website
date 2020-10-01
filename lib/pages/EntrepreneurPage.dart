@@ -3,6 +3,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:jerryselin/components/Footer.dart';
 import 'package:jerryselin/components/MyAppBar.dart';
 import 'package:jerryselin/components/MobileNavigation.dart';
 import 'package:jerryselin/TitleHelper.dart';
@@ -31,7 +32,11 @@ class _EntrepreneurPageState extends State<EntrepreneurPage> {
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: [Text("Under progress...")],
+                children: [
+                  Container(height: 100, child: Text("Under progress...")),
+                  Container(height: MediaQuery.of(context).size.height -200,),
+                  Footer()
+                ],
               ),
             )),
       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:jerryselin/components/Footer.dart';
 import 'package:jerryselin/components/MobileNavigation.dart';
 import 'package:jerryselin/components/MyAppBar.dart';
 import 'package:jerryselin/components/TopBanner.dart';
@@ -127,32 +128,6 @@ class _MainPageState extends State<MainPage> {
                   width: w,
                   padding: EdgeInsets.only(top: 50),
                   child: Text(
-                    tr("how_you_learned"),
-                    style: TextStyle(
-                        fontStyle: FontStyle.italic,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25),
-                  ),
-                ),
-                Container(
-                  width: w,
-                  padding: EdgeInsets.only(top: 10),
-                  child: RichText(
-                    text: TextSpan(
-                      style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.black,
-                      ),
-                      children: <TextSpan>[
-                        TextSpan(text: tr("how_you_learned_answer")),
-                      ],
-                    ),
-                  ),
-                ),
-                Container(
-                  width: w,
-                  padding: EdgeInsets.only(top: 50),
-                  child: Text(
                     tr("what_you_do"),
                     style: TextStyle(
                         fontStyle: FontStyle.italic,
@@ -176,8 +151,35 @@ class _MainPageState extends State<MainPage> {
                   ),
                 ),
                 Container(
+                  width: w,
+                  padding: EdgeInsets.only(top: 50),
+                  child: Text(
+                    tr("how_you_learned"),
+                    style: TextStyle(
+                        fontStyle: FontStyle.italic,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25),
+                  ),
+                ),
+                Container(
+                  width: w,
+                  padding: EdgeInsets.only(top: 10),
+                  child: RichText(
+                    text: TextSpan(
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black,
+                      ),
+                      children: <TextSpan>[
+                        TextSpan(text: tr("how_you_learned_answer")),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
                   height: 50,
-                )
+                ),
+                Footer()
               ],
             ),
           )),

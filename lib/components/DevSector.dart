@@ -19,10 +19,12 @@ class DevSector extends StatefulWidget {
 class _DevSectorState extends State<DevSector> {
   @override
   Widget build(BuildContext context) {
+    double w = MediaQuery.of(context).size.width;
+    double pad = ((w < 700) ? 10 : 20);
     return Padding(
-      padding: const EdgeInsets.all(20.0),
+      padding: EdgeInsets.symmetric(vertical: 20, horizontal: pad),
       child: Container(
-        padding: EdgeInsets.all(20),
+        padding: EdgeInsets.symmetric(vertical: 20, horizontal: pad),
 
         decoration: BoxDecoration(border: Border.all(
             color: Color.fromRGBO(103, 58, 183, 0.5), width: 1),

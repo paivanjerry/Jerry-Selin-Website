@@ -6,6 +6,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:video_player/video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+// ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
 
 class InstagramPlayer extends StatefulWidget {

@@ -7,18 +7,20 @@ class DevItem extends StatefulWidget {
   _DevItemState createState() => _DevItemState();
   final Widget child;
   final String title;
-  final String description;
+  final List<TextSpan> description;
   final Widget titleIcon;
   final double width;
+  final double titleWidth;
 
-  DevItem({this.child, this.title, this.description, this.titleIcon, this.width}) : super();
+  DevItem({this.child, this.title, this.description, this.titleIcon, this.width, this.titleWidth}) : super();
 }
 
 class _DevItemState extends State<DevItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
+      constraints: BoxConstraints(
+          minHeight: 200, ),
       width: widget.width ?? 200,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,10 +42,22 @@ class _DevItemState extends State<DevItem> {
               ),
             ),
           ),
-          Container(height: 1, color: Colors.deepPurple, width: 300,),
+          Container(height: 1, color: Colors.deepPurple, width: widget.titleWidth ?? 250,),
           Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(widget.description ?? "", style: TextStyle(color: Colors.white), textAlign: TextAlign.left,),
+            padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 5),
+
+            child: RichText(
+              text: TextSpan(
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                ),
+                children: widget.description,
+              ),
+            ),
+
+
+            //child: Text(widget.description ?? "", style: TextStyle(color: Colors.white), textAlign: TextAlign.left,),
           ),
           widget.child ?? Container()
         ],

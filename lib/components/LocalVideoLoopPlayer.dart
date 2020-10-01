@@ -26,7 +26,9 @@ class _LocalVideoLoopPlayerState extends State<LocalVideoLoopPlayer> {
       ..initialize().then((_) => setState(() {
             videoLength = _controller.value.duration;
             _controller.setLooping(true);
+            _controller.setVolume(volume);
             _controller.play();
+
           }));
   }
 
@@ -50,56 +52,6 @@ class _LocalVideoLoopPlayerState extends State<LocalVideoLoopPlayer> {
                 allowScrubbing: true,
                 padding: EdgeInsets.all(10),
               ),
-              /*
-              Row(
-                children: <Widget>[
-                  IconButton(
-                    icon: Icon(
-                      _controller.value.isPlaying
-                          ? Icons.pause
-                          : Icons.play_arrow,
-                      color: Colors.lightBlue, ),
-                    onPressed: () {
-                      setState(() {
-                        _controller.value.isPlaying
-                            ? _controller.pause()
-                            : _controller.play();
-                      });
-                    },
-                  ),
-                  Text(
-                    '${convertToMinutesSeconds(videoPosition)} / ${convertToMinutesSeconds(videoLength)}',
-                    style: TextStyle(color: Colors.lightBlue),
-                  ),
-                  SizedBox(width: 10),
-                  Icon(
-                    animatedVolumeIcon(volume),
-                    color: Colors.lightBlue,
-                  ),
-                  Slider(
-                    value: volume,
-                    min: 0,
-                    max: 1,
-                    onChanged: (_volume) => setState(() {
-                      volume = _volume;
-                      _controller.setVolume(_volume);
-                    }),
-                  ),
-                  Spacer(),
-                  IconButton(
-                      icon: Icon(
-                        Icons.loop,
-                        color: _controller.value.isLooping
-                            ? Colors.lightBlue
-                            : Colors.grey,
-                      ),
-                      onPressed: () {
-                        setState(() {
-                          _controller.setLooping(!_controller.value.isLooping);
-                        });
-                      }),
-                ],
-              )*/
             ],
           ],
         ),

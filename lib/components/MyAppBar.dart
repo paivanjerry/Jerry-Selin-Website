@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/rendering.dart';
 import 'package:jerryselin/TitleHelper.dart';
 
 
@@ -42,7 +43,12 @@ class _MyAppBarState extends State<MyAppBar> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Container(child: Image.asset("assets/images/en.png")),
+                      MouseRegion(
+                          cursor: SystemMouseCursors.click,
+                          child: Tooltip(
+                              waitDuration: Duration(seconds: 1),
+                              message: "English",
+                              child: Container(child: Image.asset("assets/images/en.png")))),
                       Padding(
                         padding: const EdgeInsets.only(top: 5),
                         child: Container(
@@ -59,7 +65,12 @@ class _MyAppBarState extends State<MyAppBar> {
             GestureDetector(
               child: Column(
                 children: [
-                  Container(child: Image.asset("assets/images/fi.png")),
+                  MouseRegion(
+                      cursor: SystemMouseCursors.click,
+                      child: Tooltip(
+                          waitDuration: Duration(seconds: 1),
+                          message: "Suomi",
+                          child: Container(child: Image.asset("assets/images/fi.png")))),
                   Padding(
                     padding: const EdgeInsets.only(top: 5),
                     child: Container(

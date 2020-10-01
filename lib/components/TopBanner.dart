@@ -72,114 +72,128 @@ class _BannerState extends State<TopBanner> {
       padding: EdgeInsets.all(10),
       child: Column(
         children: [
-          MouseRegion(
-            cursor: SystemMouseCursors.click,
-            onHover: (event) {
+          GestureDetector(
+            onTap: (){
               setState(() {
-                _bannerHover = true;
                 _bannerMode = 5;
               });
             },
-            onExit: (event) {
-              setState(() {
-                _bannerHover = false;
-              });
-            },
-            child: Container(
-                width: MediaQuery.of(context).size.width,
-                height: 100,
-                child: Center(
-                    child: _bannerMode == 5
-                        ? Tooltip(
-                            message: tr("open_jackofalltrades"),
-                            waitDuration: Duration(milliseconds: 600),
-                            verticalOffset: 30,
-                            child: GestureDetector(
-                              onTap: () {
-                                Navigator.of(context)
-                                    .pushNamed(OtherPage.route);
-                              },
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Image.asset(
-                                      context.locale.toString().contains("en")
-                                          ? "assets/images/multitool.png"
-                                          : "assets/images/hoyla.png",
-                                      height: 50),
-                                  Text(
-                                    tr("jackofalltrades"),
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 25),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ],
+            child: MouseRegion(
+              cursor: SystemMouseCursors.click,
+              onHover: (event) {
+                setState(() {
+                  _bannerHover = true;
+                  _bannerMode = 5;
+                });
+              },
+              onExit: (event) {
+                setState(() {
+                  _bannerHover = false;
+                });
+              },
+              child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 100,
+                  child: Center(
+                      child: _bannerMode == 5
+                          ? Tooltip(
+                              message: tr("open_jackofalltrades"),
+                              waitDuration: Duration(milliseconds: 600),
+                              verticalOffset: 30,
+                              child: GestureDetector(
+                                onTap: () {
+                                  Navigator.of(context)
+                                      .pushNamed(OtherPage.route);
+                                },
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Image.asset(
+                                        context.locale.toString().contains("en")
+                                            ? "assets/images/multitool.png"
+                                            : "assets/images/hoyla.png",
+                                        height: 50),
+                                    Text(
+                                      tr("jackofalltrades"),
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 25),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ],
+                                ),
                               ),
-                            ),
-                          )
-                        : Text(""))),
+                            )
+                          : Text(""))),
+            ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              MouseRegion(
-                cursor: SystemMouseCursors.click,
-                onHover: (event) {
+              GestureDetector(
+                onTap: (){
                   setState(() {
-                    _bannerHover = true;
                     _bannerMode = 4;
                   });
                 },
-                onExit: (event) {
-                  setState(() {
-                    _bannerHover = false;
-                  });
-                },
-                child: Container(
-                    width: MediaQuery.of(context).size.width / 3,
-                    height: (MediaQuery.of(context).size.width / 3) * IMG_RES,
-                    child: Center(
-                      child: _bannerMode == 1
-                          ? Text(
-                              "Jerry",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 35),
-                            )
-                          : (_bannerMode == 4
-                              ? Tooltip(
-                                  message: tr("open_entrepreneur"),
-                                  waitDuration: Duration(milliseconds: 600),
-                                  verticalOffset: 50,
-                                  child: GestureDetector(
-                                    onTap: () {
-                                      Navigator.of(context)
-                                          .pushNamed(EntrepreneurPage.route);
-                                    },
-                                    child: FittedBox(
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Image.asset(
-                                              "assets/images/entrepreneur.png",
-                                              height: 50),
-                                          Container(
-                                            child: Text(
-                                              tr("entrepreneur"),
-                                              textAlign: TextAlign.center,
-                                              style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 25),
+                child: MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  onHover: (event) {
+                    setState(() {
+                      _bannerHover = true;
+                      _bannerMode = 4;
+                    });
+                  },
+                  onExit: (event) {
+                    setState(() {
+                      _bannerHover = false;
+                    });
+                  },
+                  child: Container(
+                      width: MediaQuery.of(context).size.width / 3,
+                      height: (MediaQuery.of(context).size.width / 3) * IMG_RES,
+                      child: Center(
+                        child: _bannerMode == 1
+                            ? Text(
+                                "Jerry",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 35),
+                              )
+                            : (_bannerMode == 4
+                                ? Tooltip(
+                                    message: tr("open_entrepreneur"),
+                                    waitDuration: Duration(milliseconds: 600),
+                                    verticalOffset: 50,
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        Navigator.of(context)
+                                            .pushNamed(EntrepreneurPage.route);
+                                      },
+                                      child: FittedBox(
+                                        child: Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Image.asset(
+                                                "assets/images/entrepreneur.png",
+                                                height: 50),
+                                            Container(
+                                              child: Text(
+                                                tr("entrepreneur"),
+                                                textAlign: TextAlign.center,
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 25),
+                                              ),
                                             ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                )
-                              : Text("")),
-                    )),
+                                  )
+                                : Text("")),
+                      )),
+                ),
               ),
               MouseRegion(
                 cursor: SystemMouseCursors.grabbing,
@@ -197,6 +211,7 @@ class _BannerState extends State<TopBanner> {
                 child: GestureDetector(
                   onTap: () {
                     setState(() {
+                      _bannerMode = 1;
                       _showOuch = true;
                     });
                     Future.delayed(Duration(milliseconds: 800), () {
@@ -226,120 +241,132 @@ class _BannerState extends State<TopBanner> {
                       )),
                 ),
               ),
-              MouseRegion(
-                cursor: SystemMouseCursors.click,
-                onHover: (event) {
-                  setState(() {
-                    _bannerHover = true;
-                    _bannerMode = 2;
-                  });
-                },
-                onExit: (event) {
-                  setState(() {
-                    _bannerHover = false;
-                  });
-                },
-                child: Container(
-                    width: MediaQuery.of(context).size.width / 3,
-                    height: (MediaQuery.of(context).size.width / 3) * IMG_RES,
-                    child: Center(
-                        child: _bannerMode == 1
-                            ? Text(
-                                "Selin",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold, fontSize: 35),
-                              )
-                            : (_bannerMode == 2
-                                ? Tooltip(
-                                    message: tr("open_skatevideos"),
-                                    waitDuration: Duration(milliseconds: 600),
-                                    verticalOffset: 50,
-                                    child: GestureDetector(
-                                      onTap: () {
-                                        Navigator.of(context)
-                                            .pushNamed(SkateVideoPage.route);
-                                      },
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Image.asset(
-                                              "assets/images/skatedeck.png",
-                                              height: 50),
-                                          Text(
-                                            tr("skater"),
-                                            style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 25),
-                                          ),
-                                        ],
+              GestureDetector(
+                onTap: (){setState(() {
+                  _bannerMode = 2;
+                });},
+                child: MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  onHover: (event) {
+                    setState(() {
+                      _bannerHover = true;
+                      _bannerMode = 2;
+                    });
+                  },
+                  onExit: (event) {
+                    setState(() {
+                      _bannerHover = false;
+                    });
+                  },
+                  child: Container(
+                      width: MediaQuery.of(context).size.width / 3,
+                      height: (MediaQuery.of(context).size.width / 3) * IMG_RES,
+                      child: Center(
+                          child: _bannerMode == 1
+                              ? Text(
+                                  "Selin",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold, fontSize: 35),
+                                )
+                              : (_bannerMode == 2
+                                  ? Tooltip(
+                                      message: tr("open_skatevideos"),
+                                      waitDuration: Duration(milliseconds: 600),
+                                      verticalOffset: 50,
+                                      child: GestureDetector(
+                                        onTap: () {
+                                          Navigator.of(context)
+                                              .pushNamed(SkateVideoPage.route);
+                                        },
+                                        child: Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Image.asset(
+                                                "assets/images/skatedeck.png",
+                                                height: 50),
+                                            Text(
+                                              tr("skater"),
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 25),
+                                            ),
+                                          ],
+                                        ),
                                       ),
-                                    ),
-                                  )
-                                : Text("")))),
+                                    )
+                                  : Text("")))),
+                ),
               ),
             ],
           ),
-          MouseRegion(
-            cursor: SystemMouseCursors.click,
-            onHover: (event) {
+          GestureDetector(
+            onTap: (){
               setState(() {
-                _bannerHover = true;
                 _bannerMode = 3;
               });
             },
-            onExit: (event) {
-              setState(() {
-                _bannerHover = false;
-              });
-            },
-            child: Container(
-                width: MediaQuery.of(context).size.width,
-                height: 100,
-                child: Center(
-                  child: Container(
-                      child: _bannerMode == 3
-                          ? Tooltip(
-                              message: tr("open_developer"),
-                              waitDuration: Duration(milliseconds: 600),
-                              verticalOffset: 30,
-                              child: FittedBox(
-                                fit: BoxFit.scaleDown,
-                                child: GestureDetector(
-                                  onTap: () {
-                                    Navigator.of(context)
-                                        .pushNamed(DeveloperPage.route);
-                                  },
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Image.asset(
-                                        "assets/images/android.png",
-                                        height: 50,
-                                      ),
-                                      Text(
-                                        "</>",
-                                        style: TextStyle(
-                                            fontSize: 35,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                      Image.asset("assets/images/flutter.png",
-                                          height: 50),
-                                      Text(
-                                        tr("developer"),
-                                        maxLines: 1,
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 25),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ],
+            child: MouseRegion(
+              cursor: SystemMouseCursors.click,
+              onHover: (event) {
+                setState(() {
+                  _bannerHover = true;
+                  _bannerMode = 3;
+                });
+              },
+              onExit: (event) {
+                setState(() {
+                  _bannerHover = false;
+                });
+              },
+              child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 100,
+                  child: Center(
+                    child: Container(
+                        child: _bannerMode == 3
+                            ? Tooltip(
+                                message: tr("open_developer"),
+                                waitDuration: Duration(milliseconds: 600),
+                                verticalOffset: 30,
+                                child: FittedBox(
+                                  fit: BoxFit.scaleDown,
+                                  child: GestureDetector(
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .pushNamed(DeveloperPage.route);
+                                    },
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Image.asset(
+                                          "assets/images/android.png",
+                                          height: 50,
+                                        ),
+                                        Text(
+                                          "</>",
+                                          style: TextStyle(
+                                              fontSize: 35,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        Image.asset("assets/images/flutter.png",
+                                            height: 50),
+                                        Text(
+                                          tr("developer"),
+                                          maxLines: 1,
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 25),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
-                              ),
-                            )
-                          : Text("")),
-                )),
+                              )
+                            : Text("")),
+                  )),
+            ),
           ),
         ],
       ),
