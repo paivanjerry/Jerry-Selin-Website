@@ -38,6 +38,12 @@ class _DeveloperPageState extends State<DeveloperPage> {
   }
 
   @override
+  void initState() {
+    TitleHelper().refreshTitle();
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     double w = MediaQuery.of(context).size.width > 500
         ? 500
@@ -306,6 +312,18 @@ class _DeveloperPageState extends State<DeveloperPage> {
                                               "Napalm Custom");
                                         }),
                                   TextSpan(text: tr("vue_desc_2")),
+                                  TextSpan(
+                                      text: tr("vue_desc_3"),
+                                      style: TextStyle(
+                                          color: Colors.deepPurple.shade300,
+                                          decoration: TextDecoration.underline),
+                                      recognizer: TapGestureRecognizer()
+                                        ..onTap = () {
+                                          html.window.open(
+                                              "https://skeittivideot.fi",
+                                              "Skeittivideot.fi");
+                                        }),
+                                  TextSpan(text: tr("vue_desc_4")),
                                 ],
                               ),
                               DevItem(

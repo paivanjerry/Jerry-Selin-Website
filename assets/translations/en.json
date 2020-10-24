@@ -77,7 +77,9 @@
   "react_desc_2": " with React. Data Spottimettä is a web site that calculates and shows data from the Spottimettä apps. It even has skate spot statistics compared to city population.",
   "vue_desc_1": "I had an awesome opportunity to create new web sites. This time I wanted to try Vue.js for the task. The implemented web page is ",
   "napalm_site": "Napalm Custom web page",
-  "vue_desc_2": ". Besides the publicly visible UI, the page has some customization options for admin user. I really enjoyed Vue.js and I'm eagerly waiting for the next opportunity to get my hands on that framework.",
+  "vue_desc_2": ". Besides the publicly visible UI, the page has some customization options for admin user. Later I made an finnish skateboarding video archive called ",
+  "vue_desc_3": "skeittivideot.fi",
+  "vue_desc_4": ", which lets users to add their favourite videos. The archive provides a lot of searching features to find videos.",
   "flutter_web_desc_1": "You might have notice that this page does not feel like usual web page. That's because ",
   "flutter_web_desc_2": "this page",
   "flutter_web_desc_3": " is made with Flutter, the very same framework that I have used to create mobile apps. Flutter web is still kind of... not ready. I have made some hacking to get these pages feel more like web pages and not mobile app. See the source code from my Github (link in Footer).",
@@ -87,7 +89,9 @@
   "python_desc": "Python have been helping me a lot when I have needed some parsing for my files. When it comes to online world, I have used Selenium to scrape data from multiple web site to my local computer. Besides these, I have made couple Telegram bots with Python. One bot can tell your closest skate spot based on your location and another can is virtual version of Skate or Dice game. Skate or Dice game has dice, where numbers have been replaced with part of a skate trick. Bots are not deployed as I don't have server to run Python.",
   "arduino_desc": "I tried to make some super cool IoT solutions with Arduino. Mostly the components came broken from China so I kind of gave up on it. But I have succesfully made an periodic pet feeder and server that controls my sauna. More from those electronic projects can be found at ",
   "other_page": "other projects page",
-  "dot": "."
+  "dot": ".",
+  "tmi_desc": "Got interested on my projects? Need websites or mobile app? I do all kinds of digital services with my company. Get in touch from email icon at footer.",
+  "copy_email": "Copy email to clipboard (jerry.selin@gmail.com)"
 
 
 }

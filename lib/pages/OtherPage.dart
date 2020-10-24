@@ -102,6 +102,10 @@ class _OtherPageState extends State<OtherPage> {
                                       Column(
                                         children: [
                                           Image.asset(
+                                            "assets/images/minimuntre.png",
+                                            width: w * 0.3,
+                                          ),
+                                          Image.asset(
                                             "assets/images/annala.png",
                                             width: w * 0.3,
                                           ),
@@ -219,11 +223,10 @@ class _OtherPageState extends State<OtherPage> {
                                           "assets/images/phonecase.jpg",
                                           width: w * 0.45,
                                         ),
-                                        Container(
-                                            width: w * 0.45,
-                                            child: LocalVideoLoopPlayer(
-                                                asset:
-                                                    "assets/videos/clipper.mp4"))
+                                        Image.network(
+                                          "https://github.com/paivanjerry/my-gifs/blob/master/clipper.gif?raw=true",
+                                          width: w * 0.45,
+                                        ),
                                       ],
                                     ),
                                   ),

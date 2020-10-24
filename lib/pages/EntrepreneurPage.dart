@@ -1,9 +1,13 @@
+import 'dart:math';
+
+import 'package:easy_localization/easy_localization.dart';
 /// Template page for new route
 /// Use this as a template that contains all boilerplate for web page
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:jerryselin/components/Footer.dart';
+import 'package:jerryselin/components/InfoBox.dart';
 import 'package:jerryselin/components/MyAppBar.dart';
 import 'package:jerryselin/components/MobileNavigation.dart';
 import 'package:jerryselin/TitleHelper.dart';
@@ -17,10 +21,18 @@ class EntrepreneurPage extends StatefulWidget {
 }
 
 class _EntrepreneurPageState extends State<EntrepreneurPage> {
+
+  @override
+  void initState() {
+    TitleHelper().refreshTitle();
+    super.initState();
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: MyAppBar(title: tr(widget.title)),
       endDrawer: MobileNavigation(),
       body: WillPopScope(
         onWillPop: () {
@@ -33,8 +45,14 @@ class _EntrepreneurPageState extends State<EntrepreneurPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(height: 100, child: Text("Under progress...")),
-                  Container(height: MediaQuery.of(context).size.height -200,),
+                  Container(
+                    padding: EdgeInsets.all(30),
+                    width: min(700, MediaQuery.of(context).size.width),
+                    child: Column(children: [
+                    InfoBox(title: "Tmi Jerry Selin", description: tr("tmi_desc"),),
+                  ],),),
+
+                  Container(height: MediaQuery.of(context).size.height -340,),
                   Footer()
                 ],
               ),

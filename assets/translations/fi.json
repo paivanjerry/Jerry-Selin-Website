@@ -75,7 +75,9 @@
   "react_desc_2": ". Data spottimettä on sivusto, jossa on esillä Spottimetän dataan perustuvia tilastoja sekä kuvaajia. Sivuilla löytyy jopa kuvaaja, josta selviää kaupungin spottien määrän suhde kaupunkien asukaslukuun.",
   "vue_desc_1": "Sain taas käsiini mahdollisuuden toteuttaa nettisivut. Tällä kertaa halusin kokeilla Vue.js viitekehystä sivujen rakentamiseen. Sivusto, jonka toteutin on ",
   "napalm_site": "Napalm Customin kotisivu",
-  "vue_desc_2": ". Sivustolta löytyy näkyvän osan lisäksi hieman muokkausmahdollisuuksia admin käyttäjälle. Vue.js vaikutti omasta mielestäni loistokkaalta viitekehykseltä ja odotan innolla seuraavaa mahdollisuutta päästä käsiksi kyseiseen tekniikkaan.",
+  "vue_desc_2": ". Sivustolta löytyy näkyvän osan lisäksi hieman muokkausmahdollisuuksia admin käyttäjälle. Myöhemmin toteutin ",
+  "vue_desc_3": "skeittivideot.fi",
+  "vue_desc_4": " arkiston Vuella. Arkisto pyrkii kokoamaan kaikki suomalaiset rullalautailuvideot, sekä tarjoamaan hyvät hakuominaisuudet. Käyttäjät voivat lisätä arkistoon videoita anonyymisti.",
   "flutter_web_desc_1": "Fiksuimmat ovat varmaankin jo keksineet projektin, johon olen käyttänyt tätä tekniikkaa. Tuijottelet tuotosta parhaillasi. ",
   "flutter_web_desc_2": "Tämä sivu",
   "flutter_web_desc_3": " on tehty Flutterilla. Eli samalla tekniikalla kuin mun mobiilisovellukset. Flutter web on vielä melko keskeneräinen teknologia, joten näille sivuille on joutunut tekemään jokusen kikan, jotta ne sai toimimaan webbimäisesti. Tsekkaa lähdekoodi Githubista sivun alapalkista",
@@ -85,5 +87,7 @@
   "python_desc": "Pythonia on tullut käytettyä koulun lisäksi melko laajalti kaikkeen tiedostojenkäsittelyyn. Selenium on myös tullut tutuksi, kun on tarvinnut automatisoidusti tallentaa useiden nettisivujen sisällöt parsittuna omalle koneelle. Tämän lisäksi olen myös tehnyt Pythonilla muutaman Telegram botin. Toinen botti osasi kertoa sijainnin perusteella lähimmän skeittispotin ja toinen simuloi noppien heittoa. Noppien heittoa simuloivan botin noppien silmälukujen tilalla oli skeittitempun osan nimi ja noppien kokonaisuudesta muodostui skeittitemppu. Botit eivät ole tällä hetkellä toiminnassa, koska ei ole palvelinta niitä varten.",
   "arduino_desc": "Yritin tehdä innovatiivisia IoT ratkaisuja Arduinon avulla. Lopputulos oli kuitenkin liian usein se, että kiinasta saapui usean kuukauden odottelun jälkeen viallinen osa. Täysin pettymykseen tämä osa-alue ei kuitenkaan päättynyt. Onnistuin tekemään tietyin väliajoin ruokaa antavan ruokinta-automaatin eläimille, sekä web palvelimen, jonka avulla voi laittaa saunan päälle etänä. Lisätietoa näistä elektroniikkaprojekteista löytyy ",
   "other_page": "muut projektit sivulta",
-  "dot": "."
+  "dot": ".",
+  "tmi_desc": "Kiinnostuitko jostain sivun projektista? Nousiko tarve omalle mobiilisovellukselle tai nettisivuille? Teen omalla toiminimelläni digitaalisia palveluita asiakkaan tarpeisiin. Ota siis yhteyttä sivun alapalkin sähköpostikuvakkeesta ja katsotaan miten voin olla avuksi.",
+  "copy_email": "Kopio sähköpostiosoite leikepöydälle (jerry.selin@gmail.com)"
 }

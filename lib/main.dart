@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:jerryselin/pages/DeveloperPage.dart';
 import 'package:jerryselin/pages/EntrepreneurPage.dart';

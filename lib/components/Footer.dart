@@ -1,8 +1,10 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:html' as html;
 
 import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
 
 class Footer extends StatefulWidget {
   @override
@@ -94,6 +96,19 @@ class _FooterState extends State<Footer> {
                             cursor: SystemMouseCursors.click,
                             child: Image.asset(
                               "assets/images/distantskate.png",
+                              height: 40,
+                            ))),
+                  ),
+                  Tooltip(
+                    message: tr("copy_email"),
+                    child: GestureDetector(
+                        onTap: () {
+                          Clipboard.setData(ClipboardData(text: "jerry.selin@gmail.com"));
+                        },
+                        child: MouseRegion(
+                            cursor: SystemMouseCursors.click,
+                            child: Image.asset(
+                              "assets/images/mail.png",
                               height: 40,
                             ))),
                   ),
