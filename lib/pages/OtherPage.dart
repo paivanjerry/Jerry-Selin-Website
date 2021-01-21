@@ -478,7 +478,7 @@ class _OtherPageState extends State<OtherPage> {
             width: w * 0.3,
           ),
           Image.asset(
-            "assets/images/selinpixar.jpg",
+            "assets/images/industry_portfolio.png",
             width: w * 0.3,
           ),
         ],

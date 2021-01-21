@@ -1,10 +1,16 @@
+import 'package:audio_service/audio_service.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:jerryselin/components/musicWidget.dart';
 import 'package:jerryselin/pages/DeveloperPage.dart';
 import 'package:jerryselin/pages/EntrepreneurPage.dart';
 import 'package:jerryselin/pages/MainPage.dart';
 import 'package:jerryselin/pages/OtherPage.dart';
 import 'package:jerryselin/pages/SkateVideoPage.dart';
+
+import 'package:jerryselin/audioPlayer.dart';
+
+import '../bgEntry.dart';
 
 class MobileNavigation extends StatelessWidget {
   @override
@@ -63,8 +69,22 @@ class MobileNavigation extends StatelessWidget {
               Navigator.of(context).pushNamed(OtherPage.route);
             },
           ),
+          InkWell(
+            onTap: (){},
+            child: Container(
+              height: 50,
+                padding: const EdgeInsets.symmetric(horizontal: 2.0),
+                child: MusicWidget(),
+              ),
+          ),
         ],
       ),
     );
   }
-}
+  startAudio() =>
+      AudioService.start(backgroundTaskEntrypoint: backgroundTaskEntrypoint);
+
+  stopAudio() => AudioService.stop();
+
+
+}//widget

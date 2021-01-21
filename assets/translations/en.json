@@ -26,7 +26,7 @@
   "video_editing": "Video editing",
   "electronics": "Electronics",
   "events": "Organizing events",
-  "3d_modelling_desc": "I have done several skate park models with SketchUp. For 3d printing models and general engineering I use OnShape, SolidWorks and NX CAD.",
+  "3d_modelling_desc": "I have done several skate park models with SketchUp. For 3d printing models and general engineering I use OnShape, SolidWorks, Fusion 360 and NX CAD.",
   "events_desc": "Most of the events are organized with TTHP (ski club in our university). Besides this, I often find myself organizing the small events like indoor skate park rent for a night. Following posters are also created by me.",
   "student": "University student",
   "student_desc": "I have bachelor of science degree and I am studying for masters degree in information technology at Tampere University.",
@@ -91,7 +91,13 @@
   "other_page": "other projects page",
   "dot": ".",
   "tmi_desc": "Got interested on my projects? Need websites or mobile app? I do all kinds of digital services with my company. Get in touch from email icon at footer.",
-  "copy_email": "Copy email to clipboard (jerry.selin@gmail.com)"
+  "copy_email": "Copy email to clipboard (jerry.selin@gmail.com)",
+  "phaser_desc": "I played a lot of web games when I was younger. I wanted to contribute and made my first game. The game is called ",
+  "phaser_desc_2": "Life of Jerry",
+  "phaser_desc_3": " and the idea of the game is to displace the boss of skateboarding industry. Besides coding, I also created the graphics, music and sound effects for the game.",
+  "phaser_desc_4": " Watch a short preview of the game from ",
+  "phaser_desc_5": "here",
+  "wantMusic": "I have made some awesome 8-bit music. Want to listen it while browsing the site?"
 
 
 }

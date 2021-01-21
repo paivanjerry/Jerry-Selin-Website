@@ -6,6 +6,7 @@ import 'package:jerryselin/pages/EntrepreneurPage.dart';
 import 'package:jerryselin/pages/MainPage.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:jerryselin/pages/OtherPage.dart';
+import 'package:audio_service/audio_service.dart';
 
 import 'package:navigation_history_observer/navigation_history_observer.dart';
 
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       title: "Jerry Selin",
       routes: {
-        '/': (context) => MainPage(),
+        '/': (context) => AudioServiceWidget(child: MainPage()),
         '/skatevideos': (context) => SkateVideoPage(),
         '/other': (context) => OtherPage(),
         '/developer': (context) => DeveloperPage(),

@@ -71,6 +71,22 @@ class _FooterState extends State<Footer> {
                               height: 40,
                             ))),
                   ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 10.0),
+                    child: Tooltip(
+                      message: tr("copy_email"),
+                      child: GestureDetector(
+                          onTap: () {
+                            Clipboard.setData(ClipboardData(text: "jerry.selin@gmail.com"));
+                          },
+                          child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: Image.asset(
+                                "assets/images/mail.png",
+                                height: 40,
+                              ))),
+                    ),
+                  ),
                   Tooltip(
                     message: "Spottimettä",
                     child: GestureDetector(
@@ -100,15 +116,30 @@ class _FooterState extends State<Footer> {
                             ))),
                   ),
                   Tooltip(
-                    message: tr("copy_email"),
+                    message: "Skeittivideot.fi",
                     child: GestureDetector(
                         onTap: () {
-                          Clipboard.setData(ClipboardData(text: "jerry.selin@gmail.com"));
+                          html.window.open("https://skeittivideot.fi",
+                              "Skeittivideot.fi");
                         },
                         child: MouseRegion(
                             cursor: SystemMouseCursors.click,
                             child: Image.asset(
-                              "assets/images/mail.png",
+                              "assets/images/skeittivideotfi.png",
+                              height: 40,
+                            ))),
+                  ),
+                  Tooltip(
+                    message: "Life of Jerry",
+                    child: GestureDetector(
+                        onTap: () {
+                          html.window.open("https://lifeof.jerrysel.in",
+                              "Life of Jerry");
+                        },
+                        child: MouseRegion(
+                            cursor: SystemMouseCursors.click,
+                            child: Image.asset(
+                              "assets/images/lifeofjerry.png",
                               height: 40,
                             ))),
                   ),

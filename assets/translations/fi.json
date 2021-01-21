@@ -26,7 +26,7 @@
   "video_editing": "Videoiden muokkaaminen",
   "electronics": "Elektroniikka",
   "events": "Tapahtumien järjestäminen",
-  "3d_modelling_desc": "Skeittiparkkien piirtämiseen omasta mielestäni varsin ässä työkalu on SketchUp. Sillä olenkin jokusen parkin piirrellyt. Vastapainoksi suurinpiirtein mitoille ja viivojen lisäilyn avulla piirtelyyn, 3d printattujen kappaleiden mallit olen tehnyt poikkeuksessa OnShape, SolidWorks ja NX CAD ohjelmilla.",
+  "3d_modelling_desc": "Skeittiparkkien piirtämiseen omasta mielestäni varsin ässä työkalu on SketchUp. Sillä olenkin jokusen parkin piirrellyt. Vastapainoksi suurinpiirtein mitoille ja viivojen lisäilyn avulla piirtelyyn, insinööreilyyn ja 3d printattujen kappaleiden mallinnukseen olen käyttänyt OnShape, SolidWorks, Fusion 360 ja NX CAD ohjelmia.",
   "events_desc": "Tapahtumien järjestäminen on tapahtunut pääsääntöisesti TTHP:n (Tampereen Teekkarien Hiihto- ja Purjehdusseura) kautta. Tämän lisäksi usein organisoin pienempiä tapahtumia kuten skeittihallin vuokrausta kavereiden kanssa. Myös seuraavat tapahtumajulisteet ovat omaa tuotantoani.",
   "student": "Opiskelija",
   "student_desc": "Opiskelen Tietotekniikan ylempää korkeakoulututkintoa Tampereen Yliopistossa (ent. TTY).",
@@ -89,5 +89,14 @@
   "other_page": "muut projektit sivulta",
   "dot": ".",
   "tmi_desc": "Kiinnostuitko jostain sivun projektista? Nousiko tarve omalle mobiilisovellukselle tai nettisivuille? Teen omalla toiminimelläni digitaalisia palveluita asiakkaan tarpeisiin. Ota siis yhteyttä sivun alapalkin sähköpostikuvakkeesta ja katsotaan miten voin olla avuksi.",
-  "copy_email": "Kopio sähköpostiosoite leikepöydälle (jerry.selin@gmail.com)"
+  "copy_email": "Kopio sähköpostiosoite leikepöydälle (jerry.selin@gmail.com)",
+  "phaser_desc": "Lapsuusvuosina tuli pelattua paljon selaimella toimivia pelejä. Nyt hieman vanhempana halusin lisätä oman panokseni kyseiseen maailmaan. Tein ",
+  "phaser_desc_2": "Life of Jerry",
+  "phaser_desc_3": " pelin, jossa tarkoituksena on kehittyä skeittarina ja syrjäyttää skeittimaailman johtaja. Koodauksen lisäksi toteutin peliin grafiikat, äänitehosteet ja musiikit.",
+  "phaser_desc_4": " Katso lyhyt esittelyvideo pelistä ",
+  "phaser_desc_5": "täältä",
+  "wantMusic": "Oon tehny melko tarttuvaa 8 bittistä musiikkia. Laitetaanko soimaan samalla kun selailet sivua?"
+
+
+
 }

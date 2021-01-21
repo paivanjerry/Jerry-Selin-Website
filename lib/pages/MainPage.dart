@@ -1,3 +1,4 @@
+import 'package:audio_service/audio_service.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -5,8 +6,10 @@ import 'package:jerryselin/components/Footer.dart';
 import 'package:jerryselin/components/MobileNavigation.dart';
 import 'package:jerryselin/components/MyAppBar.dart';
 import 'package:jerryselin/components/TopBanner.dart';
+import 'package:jerryselin/audioPlayer.dart';
 
 import 'package:easy_localization/easy_localization.dart';
+import 'package:jerryselin/components/musicWidget.dart';
 
 class MainPage extends StatefulWidget {
   static const String route = '/';
@@ -20,6 +23,7 @@ class _MainPageState extends State<MainPage> {
   void initState() {
     SystemChrome.setApplicationSwitcherDescription(
         ApplicationSwitcherDescription(label: tr(MainPage.title)));
+
     super.initState();
   }
 
@@ -176,6 +180,24 @@ class _MainPageState extends State<MainPage> {
                     ),
                   ),
                 ),
+
+                Container(
+                  width: w,
+                  padding: EdgeInsets.only(top: 50),
+                  child: RichText(
+                    text: TextSpan(
+                      style: TextStyle(
+                        fontSize: 26,
+                        color: Colors.black,
+                      ),
+                      children: <TextSpan>[
+                        TextSpan(text: tr("wantMusic")),
+                      ],
+                    ),
+                  ),
+                ),
+                MusicWidget(),
+
                 Container(
                   height: 50,
                 ),
@@ -185,4 +207,6 @@ class _MainPageState extends State<MainPage> {
           )),
     );
   }
-}
+
+
+}//Widget

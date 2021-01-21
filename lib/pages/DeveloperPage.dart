@@ -353,6 +353,42 @@ class _DeveloperPageState extends State<DeveloperPage> {
                                   TextSpan(text: tr("flutter_web_desc_3")),
                                 ],
                               ),
+                              DevItem(
+                                width: w,
+                                titleIcon: Image.asset(
+                                  "assets/images/phaser.png",
+                                  height: 40,
+                                ),
+                                title: "Phaser 3",
+                                description: [
+                                  TextSpan(text: tr("phaser_desc")),
+                                  TextSpan(
+                                      text: tr("phaser_desc_2"),
+                                      style: TextStyle(
+                                          color: Colors.deepPurple.shade300,
+                                          decoration: TextDecoration.underline),
+                                      recognizer: TapGestureRecognizer()
+                                        ..onTap = () {
+                                          html.window.open(
+                                              "https://lifeof.jerrysel.in",
+                                              "Life of Jerry");
+                                        }),
+                                  TextSpan(text: tr("phaser_desc_3")),
+                                  TextSpan(text: tr("phaser_desc_4")),
+                                  TextSpan(
+                                      text: tr("phaser_desc_5"),
+                                      style: TextStyle(
+                                          color: Colors.deepPurple.shade300,
+                                          decoration: TextDecoration.underline),
+                                      recognizer: TapGestureRecognizer()
+                                        ..onTap = () {
+                                          html.window.open(
+                                              "https://youtu.be/CPUW_K6APX0",
+                                              "Life of Jerry - Preview video");
+                                        }),
+                                  TextSpan(text: "."),
+                                ],
+                              ),
                             ],
                           ),
                         ),

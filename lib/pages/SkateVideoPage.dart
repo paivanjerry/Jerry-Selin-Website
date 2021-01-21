@@ -113,6 +113,12 @@ class _SkateVideoPageState extends State<SkateVideoPage> {
                                     Padding(
                                       padding: const EdgeInsets.all(20.0),
                                       child: YoutubeVideoPlayer(
+                                        id: "gbX5wr3KpP4",
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(20.0),
+                                      child: YoutubeVideoPlayer(
                                         id: "iUQUBfTcy4A",
                                       ),
                                     ),
@@ -192,6 +198,17 @@ class _SkateVideoPageState extends State<SkateVideoPage> {
                               child: SingleChildScrollView(
                                 child: Column(
                                   children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width >
+                                          900
+                                          ? 900
+                                          : MediaQuery.of(context).size.width *
+                                          0.95,
+                                      child: InstagramPlayer(
+                                        pageUrl:
+                                        "https://www.instagram.com/p/CHvIL_9FRHU/",
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width >
                                               900
