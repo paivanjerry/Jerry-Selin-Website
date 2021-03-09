@@ -59,7 +59,7 @@
   "server": "Backend",
   "what_you_do": "What is your status?",
   "what_you_do_answer": "I am student in informational technology at Tampere University. I am also working part-time as software developer. In addition to these, I work as a entrepreneur.",
-  "android_desc": "I started my personal projects with Spottimettä skatemap. The app is native Android app that let's users add their favourite skate places in a map. The data in app is synchronized real-time with users. The app turned out to be success, or at least it has over 1000 downloads and over 4.8 starts average rating. App is available available at ",
+  "android_desc": "I started my personal projects with Spottimettä skatemap. The app is native Android app that let's users add their favourite skate places in a map. The data in app is synchronized real-time with users. The app turned out to be success, or at least it has over 1000 downloads and over 4.8 stars average rating. App is available available at ",
   "play_store": "Play Store",
   "flutter_desc_1": "A lot of people contacted me asking if I could make Iphone version of Spottimettä. I wasn't too excited to learn Native Iphone apps, because I didn't have Iphone or Mac and I had read only downsides of Apple dev thingies. Also React Native performance with Google Maps was too weak for this project. Then I met Flutter and made ",
   "spottimetta_ios": "Spottimettä iOS",
@@ -85,19 +85,24 @@
   "flutter_web_desc_3": " is made with Flutter, the very same framework that I have used to create mobile apps. Flutter web is still kind of... not ready. I have made some hacking to get these pages feel more like web pages and not mobile app. See the source code from my Github (link in Footer).",
   "firebase_desc": "Firebase is Google's serverless. I found the service when I started to make Spottimettä Android app. I used realtime database for Spottimettä. I enjoyed Firebase, so I used it as a backend for Distant S.K.A.T.E. too. This time I used Cloud Firestore as a database. Besides databases, I have used following services provided by Firebase: Cloud Messaging (push notifications), Gallery (user uploaded videos and images ), Authentication (Google, Apple ja Facebook sign ins), Hosting (for all my sites) and Functions to run Node.JS code on server.",
   "node_desc": "Node.JS is familiar to me from my studies and work. In my personal projects, I have used Node.JS with Firebase functions. With functions, I have implemented, for example, email and push notifications, database periodic cleaning, collecting amount of signed in users in that day and providing API that data.spottimetta.fi uses.",
-  "wordpress_desc": "There are couple of Wordpress online store projects where I am involved. Those are not yet public information so I better not tell anything more.",
+  "wordpress_desc": "There are couple of Wordpress online store projects where I am involved. I have used pre-made themes on those sites. One great site is a shop that sells handmade Finnish clothes and lifestyle products. It's called ",
+  "wordpress_desc_2": "Katve Lifestyle",
   "python_desc": "Python have been helping me a lot when I have needed some parsing for my files. When it comes to online world, I have used Selenium to scrape data from multiple web site to my local computer. Besides these, I have made couple Telegram bots with Python. One bot can tell your closest skate spot based on your location and another can is virtual version of Skate or Dice game. Skate or Dice game has dice, where numbers have been replaced with part of a skate trick. Bots are not deployed as I don't have server to run Python.",
   "arduino_desc": "I tried to make some super cool IoT solutions with Arduino. Mostly the components came broken from China so I kind of gave up on it. But I have succesfully made an periodic pet feeder and server that controls my sauna. More from those electronic projects can be found at ",
   "other_page": "other projects page",
   "dot": ".",
   "tmi_desc": "Got interested on my projects? Need websites or mobile app? I do all kinds of digital services with my company. Get in touch from email icon at footer.",
-  "copy_email": "Copy email to clipboard (jerry.selin@gmail.com)",
+  "copy_email": "Copy email to clipboard (jerry@jerrysel.in)",
   "phaser_desc": "I played a lot of web games when I was younger. I wanted to contribute and made my first game. The game is called ",
   "phaser_desc_2": "Life of Jerry",
   "phaser_desc_3": " and the idea of the game is to displace the boss of skateboarding industry. Besides coding, I also created the graphics, music and sound effects for the game.",
   "phaser_desc_4": " Watch a short preview of the game from ",
   "phaser_desc_5": "here",
-  "wantMusic": "I have made some awesome 8-bit music. Want to listen it while browsing the site?"
+  "wantMusic": "I have made some awesome 8-bit music. Want to listen it while browsing the site?",
+  "gcp_desc": "I am always willing to expand my projects and I am looking forward to use Google Cloud Platform for it. I have made ",
+  "gcp_desc_2": "automatically updating MyMaps",
+  "gcp_desc_3": " map which has same places as Spottimettä apps. This map can be opened in phone's Google Maps app and viewed during navigation. I used Cloud Scheduler for daily call to Docker container hosted in Cloud Run environment. In the container, Python script fetches Spottimettä data, converts it to .kml file and modifies the MyMaps using Selenium."
+
 
 
 }

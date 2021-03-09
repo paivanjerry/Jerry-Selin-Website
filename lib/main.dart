@@ -10,10 +10,12 @@ import 'package:audio_service/audio_service.dart';
 
 import 'package:navigation_history_observer/navigation_history_observer.dart';
 
-import 'package:jerryselin/pages/SkateVideoPage.dart';
 
+import 'package:jerryselin/pages/SkateVideoPage.dart';
+import 'configure_nonweb.dart' if (dart.library.html) 'configure_web.dart';
 
 void main() {
+  configureApp();
   runApp(
     EasyLocalization(
         supportedLocales: [Locale('en'), Locale('fi')],

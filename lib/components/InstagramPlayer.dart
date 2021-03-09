@@ -3,7 +3,9 @@ import 'dart:convert';
 /// Video player for Instagram
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/rendering.dart';
 import 'package:video_player/video_player.dart';
+import 'package:url_launcher/link.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 // ignore: avoid_web_libraries_in_flutter
@@ -54,18 +56,27 @@ class _InstagramPlayerState extends State<InstagramPlayer> {
             Padding(
               padding: const EdgeInsets.only(
                   top: 40.0, bottom: 10, left: 5, right: 5),
-              child: InkWell(
+
+                child: GestureDetector(
                   onTap: () {
-                    html.window
-                        .open(widget.pageUrl, "Jerry Selin Instagram Video");
+                    html.window.open(
+                        widget.pageUrl,
+                        "Instagram video");
                   },
+                  child: Link(
+                uri: Uri.parse(widget.pageUrl),
+                builder: (BuildContext context, FollowLink followLink) => MouseRegion(
+                  cursor: SystemMouseCursors.click,
                   child: Text(
                     widget.pageUrl
                         .replaceAll("https://www.", "")
                         .replaceAll("https://", ""),
                     style:
-                        TextStyle(fontSize: 18, color: Colors.lightBlueAccent),
-                  )),
+                    TextStyle(fontSize: 18, color: Colors.lightBlueAccent),
+                  ),
+                )
+              ),)
+
             ),
             if (_controller.value.initialized) ...[
               AspectRatio(

@@ -71,21 +71,24 @@ class _FooterState extends State<Footer> {
                               height: 40,
                             ))),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 10.0),
-                    child: Tooltip(
-                      message: tr("copy_email"),
-                      child: GestureDetector(
-                          onTap: () {
-                            Clipboard.setData(ClipboardData(text: "jerry.selin@gmail.com"));
-                          },
-                          child: MouseRegion(
-                              cursor: SystemMouseCursors.click,
-                              child: Image.asset(
-                                "assets/images/mail.png",
-                                height: 40,
-                              ))),
-                    ),
+                  Tooltip(
+                    message: tr("copy_email"),
+                    child: GestureDetector(
+                        onTap: () {
+                          Clipboard.setData(ClipboardData(text: "jerry@jerrysel.in"));
+                        },
+                        child: MouseRegion(
+                            cursor: SystemMouseCursors.click,
+                            child: Image.asset(
+                              "assets/images/mail.png",
+                              height: 40,
+                            ))),
+                  ),
+                  Container(
+                    width: 1,
+                    height: 40,
+                    color: Colors.deepPurple.shade400,
+
                   ),
                   Tooltip(
                     message: "Spottimettä",

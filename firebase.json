@@ -7,28 +7,6 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "redirects": [
-      {
-        "source": "/skatevideos:params*",
-        "destination": "/#/skatevideos:params",
-        "type": 301
-      },
-      {
-        "source": "/other:params*",
-        "destination": "/#/other:params",
-        "type": 301
-      },
-      {
-        "source": "/developer:params*",
-        "destination": "/#/developer:params",
-        "type": 301
-      },
-      {
-        "source": "/entrepreneur:params*",
-        "destination": "/#/entrepreneur:params",
-        "type": 301
-      }
-    ],
     "rewrites": [
       {
         "source": "**",

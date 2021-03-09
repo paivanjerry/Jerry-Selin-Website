@@ -32,7 +32,8 @@ class _EntrepreneurPageState extends State<EntrepreneurPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(title: tr(widget.title)),
+      appBar: MyAppBar(title: tr(widget.title),
+        isBackButton: true,),
       endDrawer: MobileNavigation(),
       body: WillPopScope(
         onWillPop: () {

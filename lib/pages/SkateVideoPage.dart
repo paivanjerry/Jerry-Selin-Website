@@ -3,12 +3,13 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:jerryselin/components/Footer.dart';
 import 'package:jerryselin/components/YoutubeVideoPlayer.dart';
 import 'package:jerryselin/components/MobileNavigation.dart';
 import 'package:jerryselin/components/MyAppBar.dart';
-
+import 'package:url_launcher/link.dart';
 import 'package:jerryselin/TitleHelper.dart';
 import 'dart:html' as html;
 
@@ -80,15 +81,23 @@ class _SkateVideoPageState extends State<SkateVideoPage> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     GestureDetector(
-                                        onTap: () {
-                                          html.window.open(
-                                              "https://www.youtube.com/channel/UCkqvtxhI1RNz8VGO2nVyCPw",
-                                              "Jerry Selin Youtube channel");
-                                        },
-                                        child: Image.asset(
-                                          "assets/images/youtube.png",
-                                          height: 50,
-                                        )),
+                                    onTap: () {
+                                      html.window.open(
+                                      "https://www.youtube.com/channel/UCkqvtxhI1RNz8VGO2nVyCPw",
+                                      "Jerry Selin Youtube");
+                                      },
+                                      child: Link(
+
+                                          uri: Uri.parse("https://www.youtube.com/channel/UCkqvtxhI1RNz8VGO2nVyCPw"),
+                                          builder: (BuildContext context, FollowLink followLink) => MouseRegion(
+                                              cursor: SystemMouseCursors.click,
+                                              child: Image.asset(
+                                                "assets/images/youtube.png",
+                                                height: 50,
+                                              )
+                                          )
+                                      ),
+                                    ),
                                     Padding(
                                       padding: const EdgeInsets.all(20.0),
                                       child: Text(
@@ -178,17 +187,25 @@ class _SkateVideoPageState extends State<SkateVideoPage> {
                                 ),
                               ),
                             ),
-                            InkWell(
-                                onTap: () {
-                                  html.window.open(
-                                      "https://www.instagram.com/jerryselin/",
-                                      "Jerry Selin Instagram");
-                                },
-                                child: Text(
-                                  "@jerryselin",
-                                  style: TextStyle(
-                                      fontSize: 30, color: Colors.blue),
-                                )),
+                      GestureDetector(
+                      onTap: () {
+                      html.window.open(
+                          "https://www.instagram.com/jerryselin/",
+                      "Jerry Selin Instagram");
+                      },
+                      child: Link(
+                                uri: Uri.parse("https://www.instagram.com/jerryselin/"),
+                                builder: (BuildContext context, FollowLink followLink) => MouseRegion(
+                                  cursor: SystemMouseCursors.click,
+                                  child: Text(
+                                    "@jerryselin",
+                                    style: TextStyle(
+                                    fontSize: 30, color: Colors.blue),
+                                    )
+                                )
+                            ),
+                      ),
+
                             Container(
                               height: 50,
                             ),

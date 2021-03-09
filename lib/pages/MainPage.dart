@@ -1,4 +1,5 @@
-import 'package:audio_service/audio_service.dart';
+
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -6,7 +7,6 @@ import 'package:jerryselin/components/Footer.dart';
 import 'package:jerryselin/components/MobileNavigation.dart';
 import 'package:jerryselin/components/MyAppBar.dart';
 import 'package:jerryselin/components/TopBanner.dart';
-import 'package:jerryselin/audioPlayer.dart';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:jerryselin/components/musicWidget.dart';

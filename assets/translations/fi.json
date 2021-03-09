@@ -80,23 +80,25 @@
   "vue_desc_4": " arkiston Vuella. Arkisto pyrkii kokoamaan kaikki suomalaiset rullalautailuvideot, sekä tarjoamaan hyvät hakuominaisuudet. Käyttäjät voivat lisätä arkistoon videoita anonyymisti.",
   "flutter_web_desc_1": "Fiksuimmat ovat varmaankin jo keksineet projektin, johon olen käyttänyt tätä tekniikkaa. Tuijottelet tuotosta parhaillasi. ",
   "flutter_web_desc_2": "Tämä sivu",
-  "flutter_web_desc_3": " on tehty Flutterilla. Eli samalla tekniikalla kuin mun mobiilisovellukset. Flutter web on vielä melko keskeneräinen teknologia, joten näille sivuille on joutunut tekemään jokusen kikan, jotta ne sai toimimaan webbimäisesti. Tsekkaa lähdekoodi Githubista sivun alapalkista",
+  "flutter_web_desc_3": " on tehty Flutterilla. Eli samalla tekniikalla kuin mun mobiilisovellukset. Flutter web on vielä melko keskeneräinen teknologia, joten näille sivuille on joutunut tekemään jokusen kikan, jotta ne sai toimimaan webbimäisesti. Tsekkaa lähdekoodi Githubista sivun alapalkista.",
   "firebase_desc": "Firebase on Googlen serverless backend palvelu. Tutustuin kyseiseen palveluun ja sen reaaliaikaiseen tietokantaan, kun aloin tehdä Spottimettää. Palvelu osoittautui vallan mainioksi, joten tein Distant S.K.A.T.E.n backendin myös sinne, tosin käyttäen eri tietokantaa (Cloud Firestore). Tämän lisäksi olen käyttänyt Firebasen palveluista seuraavia: Cloud Messaging sovellusilmoituksia varten, Gallery sovelluksen videoiden ja kuvien jakamista varten, Authentication Google, Apple ja Facebook kirjautumisia varten, Hosting omien verkkosivujen hostaamiseen sekä Functions suorittamaan Node.JS funktioita palvelimella.",
   "node_desc": "Node.JS on minulle tuttu tekniikka opinnoista sekä työelämästä. Omissa projekteissa olen käyttänyt tekniikkaa Firebasen funktioiden kautta. Toteutettuja funktioita on mm. sähköposti ja push -ilmoitusten lähetys, tietokantojen siivous tietyin väliajoin, päivän päätteeksi kirjautuneiden kerääminen raporttiin sekä data.spottimetta.fi sivuston käyttämän rajapinnan tarjoaminen.",
-  "wordpress_desc": "Oon mukana työstämässä muutamaa Wordpress nettikauppaprojektia. Projektit on vielä kesken, joten parempi pysytellä toistaiseksi hissukseen niistä.",
+  "wordpress_desc": "Oon mukana työstämässä muutamaa Wordpress nettikauppaprojektia, joissa on ollut käytössä valmiit teemat. Valmistunut mainitsemisen arvoinen projekti on suomalaisia käsintehtyjä vaate- ja lifestyletuotteita myyvä ",
+  "wordpress_desc_2": "Katve Lifestyle",
   "python_desc": "Pythonia on tullut käytettyä koulun lisäksi melko laajalti kaikkeen tiedostojenkäsittelyyn. Selenium on myös tullut tutuksi, kun on tarvinnut automatisoidusti tallentaa useiden nettisivujen sisällöt parsittuna omalle koneelle. Tämän lisäksi olen myös tehnyt Pythonilla muutaman Telegram botin. Toinen botti osasi kertoa sijainnin perusteella lähimmän skeittispotin ja toinen simuloi noppien heittoa. Noppien heittoa simuloivan botin noppien silmälukujen tilalla oli skeittitempun osan nimi ja noppien kokonaisuudesta muodostui skeittitemppu. Botit eivät ole tällä hetkellä toiminnassa, koska ei ole palvelinta niitä varten.",
   "arduino_desc": "Yritin tehdä innovatiivisia IoT ratkaisuja Arduinon avulla. Lopputulos oli kuitenkin liian usein se, että kiinasta saapui usean kuukauden odottelun jälkeen viallinen osa. Täysin pettymykseen tämä osa-alue ei kuitenkaan päättynyt. Onnistuin tekemään tietyin väliajoin ruokaa antavan ruokinta-automaatin eläimille, sekä web palvelimen, jonka avulla voi laittaa saunan päälle etänä. Lisätietoa näistä elektroniikkaprojekteista löytyy ",
   "other_page": "muut projektit sivulta",
   "dot": ".",
   "tmi_desc": "Kiinnostuitko jostain sivun projektista? Nousiko tarve omalle mobiilisovellukselle tai nettisivuille? Teen omalla toiminimelläni digitaalisia palveluita asiakkaan tarpeisiin. Ota siis yhteyttä sivun alapalkin sähköpostikuvakkeesta ja katsotaan miten voin olla avuksi.",
-  "copy_email": "Kopio sähköpostiosoite leikepöydälle (jerry.selin@gmail.com)",
+  "copy_email": "Kopio sähköpostiosoite leikepöydälle (jerry@jerrysel.in)",
   "phaser_desc": "Lapsuusvuosina tuli pelattua paljon selaimella toimivia pelejä. Nyt hieman vanhempana halusin lisätä oman panokseni kyseiseen maailmaan. Tein ",
   "phaser_desc_2": "Life of Jerry",
   "phaser_desc_3": " pelin, jossa tarkoituksena on kehittyä skeittarina ja syrjäyttää skeittimaailman johtaja. Koodauksen lisäksi toteutin peliin grafiikat, äänitehosteet ja musiikit.",
   "phaser_desc_4": " Katso lyhyt esittelyvideo pelistä ",
   "phaser_desc_5": "täältä",
-  "wantMusic": "Oon tehny melko tarttuvaa 8 bittistä musiikkia. Laitetaanko soimaan samalla kun selailet sivua?"
-
-
+  "wantMusic": "Oon tehny melko tarttuvaa 8 bittistä musiikkia. Laitetaanko soimaan samalla kun selailet sivua?",
+  "gcp_desc": "Pyrin kasvattamaan nykyisiä projekteja uusilla innovatiivisilla ominaisuuksilla. Halu on kova päästä laajentamaan projekteja Firebasesta Google Cloud Platformiin. Spottimetän datan perusteella ",
+  "gcp_desc_2": "automaattisesti päivittyvä MyMaps",
+  "gcp_desc_3": " kartta antaa käyttäjälle mahdollisuuden avata Spottimetän paikat puhelimen omassa Google Maps sovelluksessa. Cloud Scheduler kutsuu päivittäin Cloud Run ympäristössä pyörivää Docker-konttia, jossa Pythonin avulla haetaan Spottimetän data. Data muutetaan .kml muotoon ja se päivitetään MyMaps karttaan Seleniumin avulla."
 
 }

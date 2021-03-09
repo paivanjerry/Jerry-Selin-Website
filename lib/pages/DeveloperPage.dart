@@ -52,6 +52,7 @@ class _DeveloperPageState extends State<DeveloperPage> {
       appBar: MyAppBar(
         title: tr("developer"),
         darkMode: true,
+        isBackButton: true,
       ),
       endDrawer: MobileNavigation(),
       body: WillPopScope(
@@ -66,6 +67,7 @@ class _DeveloperPageState extends State<DeveloperPage> {
               child: Center(
                   child: Container(
                       child: DraggableScrollbar.semicircle(
+
                 backgroundColor: Colors.deepPurple.shade50,
                 controller: scrollController,
                 alwaysVisibleScrollThumb: true,
@@ -138,14 +140,14 @@ class _DeveloperPageState extends State<DeveloperPage> {
                                   tr("dev_intro_end"),
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                      color: Colors.white, fontSize: 20),
+                                      color: Colors.white, fontSize: 25),
                                 ),
                               ),
                             ],
                           ),
                         ),
                         Container(
-                          height: 40,
+                          height: 10,
                         ),
                         DevSector(
                           title: tr("mobile"),
@@ -161,6 +163,7 @@ class _DeveloperPageState extends State<DeveloperPage> {
                                 title: "Android",
                                 description: [
                                   TextSpan(text: tr("android_desc")),
+
                                   TextSpan(
                                       text: tr("play_store"),
                                       style: TextStyle(
@@ -172,6 +175,7 @@ class _DeveloperPageState extends State<DeveloperPage> {
                                               "https://play.google.com/store/apps/details?id=com.jerry.spottimett",
                                               "Play Store Spottimettä");
                                         }),
+                                  TextSpan(text: tr(".")),
                                 ],
                               ),
                               DevItem(
@@ -218,6 +222,7 @@ class _DeveloperPageState extends State<DeveloperPage> {
                                               "https://play.google.com/store/apps/details?id=fi.spottimetta.distantskate",
                                               "Play Store Distant S.K.A.T.E.");
                                         }),
+                                  TextSpan(text: tr(".")),
                                 ],
                               ),
                             ],
@@ -333,7 +338,21 @@ class _DeveloperPageState extends State<DeveloperPage> {
                                   height: 40,
                                 ),
                                 title: "WordPress",
-                                description: [TextSpan(text: tr("wordpress_desc"))],
+                                description: [
+                                  TextSpan(text: tr("wordpress_desc")),
+                                  TextSpan(
+                                      text: tr("wordpress_desc_2"),
+                                      style: TextStyle(
+                                          color: Colors.deepPurple.shade300,
+                                          decoration: TextDecoration.underline),
+                                      recognizer: TapGestureRecognizer()
+                                        ..onTap = () {
+                                          html.window.open(
+                                              "https://katvelifestyle.fi",
+                                              "Katve Lifestyle");
+                                        }),
+                                  TextSpan(text: "."),
+                                ],
                               ),
                               DevItem(
                                 width: w,
@@ -414,6 +433,29 @@ class _DeveloperPageState extends State<DeveloperPage> {
                                 ),
                                 title: "Node JS",
                                 description: [TextSpan(text: tr("node_desc"))],
+                              ),
+                              DevItem(
+                                width: w,
+                                titleIcon: Image.asset(
+                                  "assets/images/gcp.png",
+                                  height: 40,
+                                ),
+                                title: "Google Cloud Platform",
+                                description: [
+                                  TextSpan(text: tr("gcp_desc")),
+                                  TextSpan(
+                                      text: tr("gcp_desc_2"),
+                                      style: TextStyle(
+                                          color: Colors.deepPurple.shade300,
+                                          decoration: TextDecoration.underline),
+                                      recognizer: TapGestureRecognizer()
+                                        ..onTap = () {
+                                          html.window.open(
+                                              "https://spottimetta.fi/mymaps",
+                                              "Spottimettä MyMaps");
+                                        }),
+                                  TextSpan(text: tr("gcp_desc_3")),
+                                ],
                               ),
                             ],
                           ),
