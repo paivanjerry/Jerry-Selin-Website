@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:jerryselin/audioPlayer.dart';
 import 'package:jerryselin/bgEntry.dart';
+import 'package:just_audio/just_audio.dart';
 
 class MusicWidget extends StatefulWidget {
   @override
@@ -30,7 +31,7 @@ class _MusicWidgetState extends State<MusicWidget> {
             ),
             Icon(Icons.music_note),
             if (playing)
-              Tooltip(message:"Stop", child: GestureDetector(child: Icon(Icons.stop_circle, size: 60, color: Colors.deepPurple,), onTap: stopAudio))
+              Tooltip(message:"Stop", child: GestureDetector(child: Icon(Icons.pause_circle_filled, size: 60, color: Colors.deepPurple,), onTap: stopAudio))
             else
               Tooltip(message: "Play", child: GestureDetector(child: Icon(Icons.play_circle_filled, size: 60, color: Colors.deepPurple), onTap: startAudio)),
           ],),

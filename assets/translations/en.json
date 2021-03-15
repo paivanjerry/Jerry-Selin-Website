@@ -55,8 +55,8 @@
   "dev_intro_2": "2019 I started to create my first personal project, Android app called Spottimettä. After creating that, personal projects have been filling a lot of my timetable. I also decided that I want to focus on programming and I changed my subject of studying to Information technology.",
   "dev_intro_end": "Here's some of my personal projects",
   "mobile": "Mobile apps",
-  "web": "Web apps",
-  "server": "Backend",
+  "web": "Front end",
+  "server": "Back end",
   "what_you_do": "What is your status?",
   "what_you_do_answer": "I am student in informational technology at Tampere University. I am also working part-time as software developer. In addition to these, I work as a entrepreneur.",
   "android_desc": "I started my personal projects with Spottimettä skatemap. The app is native Android app that let's users add their favourite skate places in a map. The data in app is synchronized real-time with users. The app turned out to be success, or at least it has over 1000 downloads and over 4.8 stars average rating. App is available available at ",
@@ -87,7 +87,8 @@
   "node_desc": "Node.JS is familiar to me from my studies and work. In my personal projects, I have used Node.JS with Firebase functions. With functions, I have implemented, for example, email and push notifications, database periodic cleaning, collecting amount of signed in users in that day and providing API that data.spottimetta.fi uses.",
   "wordpress_desc": "There are couple of Wordpress online store projects where I am involved. I have used pre-made themes on those sites. One great site is a shop that sells handmade Finnish clothes and lifestyle products. It's called ",
   "wordpress_desc_2": "Katve Lifestyle",
-  "python_desc": "Python have been helping me a lot when I have needed some parsing for my files. When it comes to online world, I have used Selenium to scrape data from multiple web site to my local computer. Besides these, I have made couple Telegram bots with Python. One bot can tell your closest skate spot based on your location and another can is virtual version of Skate or Dice game. Skate or Dice game has dice, where numbers have been replaced with part of a skate trick. Bots are not deployed as I don't have server to run Python.",
+  "wordpress_desc_3": "The world (and WordPress) is not ready yet. Because of this, I had to code couple plugins for WordPress. For example, a plugin that highlights the quantity of products in order, if the quantity is over one. This prevents angry phone calls from customers when entrepreneur had shipped only one piece of the product by mistake.",
+  "python_desc": "Python have been helping me a lot when I have needed some parsing for my files. When it comes to online world, I have used Selenium to scrape data from multiple web site to my local computer. Besides these, I have made couple Telegram bots with Python. One bot is virtual version of Skate or Dice game. Skate or Dice game has dice, where numbers have been replaced with part of a skate trick. Bots are currently not deployed. I have also made scripts for Fusion 360 CAD software to automate some model creations.",
   "arduino_desc": "I tried to make some super cool IoT solutions with Arduino. Mostly the components came broken from China so I kind of gave up on it. But I have succesfully made an periodic pet feeder and server that controls my sauna. More from those electronic projects can be found at ",
   "other_page": "other projects page",
   "dot": ".",
@@ -101,7 +102,17 @@
   "wantMusic": "I have made some awesome 8-bit music. Want to listen it while browsing the site?",
   "gcp_desc": "I am always willing to expand my projects and I am looking forward to use Google Cloud Platform for it. I have made ",
   "gcp_desc_2": "automatically updating MyMaps",
-  "gcp_desc_3": " map which has same places as Spottimettä apps. This map can be opened in phone's Google Maps app and viewed during navigation. I used Cloud Scheduler for daily call to Docker container hosted in Cloud Run environment. In the container, Python script fetches Spottimettä data, converts it to .kml file and modifies the MyMaps using Selenium."
+  "gcp_desc_3": " map which has same places as Spottimettä apps. This map can be opened in phone's Google Maps app and viewed during navigation. I used Cloud Scheduler for daily call to Docker container hosted in Cloud Run environment. In the container, Python script fetches Spottimettä data, converts it to .kml file and modifies the MyMaps using Selenium.",
+  "extensions_title": "Browser extensions",
+  "extensions": "I made a browser extension for the Spottimettä web app. Extension adds a button to Google Maps site. The button clones the current map view to Spottimettä web app. If user has Spottimettä open, the browser will use that tab, otherwise it creates new tab. Extension available for ",
+  "extensions_chrome": "Chrome",
+  "extensions_firefox": "Firefox",
+  "extensions_edge": "Edge",
+  " and ": " and ",
+  "pwa_desc": "I have done some Progressive Web Apps and I am interested in diving deeper into the PWA world. My PWAs are this page, Skeittivideot.fi, Data Spottimettä and Life of Jerry. Data Spottimettä and Life of Jerry works also offline."
+
+
+
 
 
 

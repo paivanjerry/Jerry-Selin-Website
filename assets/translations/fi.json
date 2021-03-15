@@ -54,8 +54,8 @@
   "dev_intro_2": "2019 kesällä tein ensimmäisen henkilökohtaisen ohjelmointiprojektin harrastemielessä. Projekti oli Spottimettä Android sovellus. Tuon projektin jälkeen harrasteprojekteja on alkanut kasaantumaan ja ne vievätkin valtaosan vapaa-ajastani. Tästä innostuneena olenkin vaihtanut opiskelemaan tietotekniikkaa.",
   "dev_intro_end": "Hieman henkilökohtaisia projektejani sekä niissä käytettyjä tekniikoita",
   "mobile": "Mobiilisovellukset",
-  "web": "Web-sovellukset",
-  "server": "Backend",
+  "web": "Front end",
+  "server": "Back end",
   "what_you_do": "Mitä teet?",
   "what_you_do_answer": "Olen tietotekniikan opiskelija Tampereen Yliopistossa. Lisäksi työskentelen osa-aikaisena ohjelmistokehittäjänä. Näiden lisäksi toimin myös yrittäjänä.",
   "android_desc": "Ensimmäisenä harrasteprojektina tein Spottimettä Android sovelluksen. Sovelluksessa käyttäjät voivat jakaa lempi skeittauspaikkojaan sekä kommentoida muiden paikkoja. Kartan käyttämä data synkronoituu reaaliaikaisesti käyttäjille. Sovelluksen vastaanotto on ollut ilmiömäisen hyvää. Tästä kertoo yli tuhat latausta sekä yli 4,8 tähden keskiarvo arvosteluissa. Tsekkaa sovellus ",
@@ -85,7 +85,8 @@
   "node_desc": "Node.JS on minulle tuttu tekniikka opinnoista sekä työelämästä. Omissa projekteissa olen käyttänyt tekniikkaa Firebasen funktioiden kautta. Toteutettuja funktioita on mm. sähköposti ja push -ilmoitusten lähetys, tietokantojen siivous tietyin väliajoin, päivän päätteeksi kirjautuneiden kerääminen raporttiin sekä data.spottimetta.fi sivuston käyttämän rajapinnan tarjoaminen.",
   "wordpress_desc": "Oon mukana työstämässä muutamaa Wordpress nettikauppaprojektia, joissa on ollut käytössä valmiit teemat. Valmistunut mainitsemisen arvoinen projekti on suomalaisia käsintehtyjä vaate- ja lifestyletuotteita myyvä ",
   "wordpress_desc_2": "Katve Lifestyle",
-  "python_desc": "Pythonia on tullut käytettyä koulun lisäksi melko laajalti kaikkeen tiedostojenkäsittelyyn. Selenium on myös tullut tutuksi, kun on tarvinnut automatisoidusti tallentaa useiden nettisivujen sisällöt parsittuna omalle koneelle. Tämän lisäksi olen myös tehnyt Pythonilla muutaman Telegram botin. Toinen botti osasi kertoa sijainnin perusteella lähimmän skeittispotin ja toinen simuloi noppien heittoa. Noppien heittoa simuloivan botin noppien silmälukujen tilalla oli skeittitempun osan nimi ja noppien kokonaisuudesta muodostui skeittitemppu. Botit eivät ole tällä hetkellä toiminnassa, koska ei ole palvelinta niitä varten.",
+  "wordpress_desc_3": "Maailma (eikä WordPress) ei ole vielä valmis. Tämän takia olen koodannut muutaman lisäosan Wordpressiin verkkokauppojen pystytyksen yhteydessä. Esimerkiksi tuotteen lukumäärän korostus tilauksessa, mikäli määrä on enemmän kuin yksi. Lisäosa säästää yrittäjää monilta vihaisilta puheluilta, kun tuotteita ei vahingossa lähetetä väärää määrää.",
+  "python_desc": "Pythonia on tullut käytettyä koulun lisäksi melko laajalti kaikkeen tiedostojenkäsittelyyn. Selenium on myös tullut tutuksi, kun on tarvinnut automatisoidusti tallentaa useiden nettisivujen sisällöt parsittuna omalle koneelle. Tämän lisäksi olen myös tehnyt Pythonilla muutaman Telegram botin. Eräs botti esimerkiksi simuloi noppien heittoa. Noppien silmälukujen tilalla on skeittitempun osan nimi ja noppien kokonaisuudesta muodostuu skeittitemppu. Botit eivät ole tällä hetkellä toiminnassa. Lisäksi olen tehnyt scriptejä Fusion 360 CAD ohjelmaan automatisoimaan osien mallinnusta.",
   "arduino_desc": "Yritin tehdä innovatiivisia IoT ratkaisuja Arduinon avulla. Lopputulos oli kuitenkin liian usein se, että kiinasta saapui usean kuukauden odottelun jälkeen viallinen osa. Täysin pettymykseen tämä osa-alue ei kuitenkaan päättynyt. Onnistuin tekemään tietyin väliajoin ruokaa antavan ruokinta-automaatin eläimille, sekä web palvelimen, jonka avulla voi laittaa saunan päälle etänä. Lisätietoa näistä elektroniikkaprojekteista löytyy ",
   "other_page": "muut projektit sivulta",
   "dot": ".",
@@ -99,6 +100,13 @@
   "wantMusic": "Oon tehny melko tarttuvaa 8 bittistä musiikkia. Laitetaanko soimaan samalla kun selailet sivua?",
   "gcp_desc": "Pyrin kasvattamaan nykyisiä projekteja uusilla innovatiivisilla ominaisuuksilla. Halu on kova päästä laajentamaan projekteja Firebasesta Google Cloud Platformiin. Spottimetän datan perusteella ",
   "gcp_desc_2": "automaattisesti päivittyvä MyMaps",
-  "gcp_desc_3": " kartta antaa käyttäjälle mahdollisuuden avata Spottimetän paikat puhelimen omassa Google Maps sovelluksessa. Cloud Scheduler kutsuu päivittäin Cloud Run ympäristössä pyörivää Docker-konttia, jossa Pythonin avulla haetaan Spottimetän data. Data muutetaan .kml muotoon ja se päivitetään MyMaps karttaan Seleniumin avulla."
+  "gcp_desc_3": " kartta antaa käyttäjälle mahdollisuuden avata Spottimetän paikat puhelimen omassa Google Maps sovelluksessa. Cloud Scheduler kutsuu päivittäin Cloud Run ympäristössä pyörivää Docker-konttia, jossa Pythonin avulla haetaan Spottimetän data. Data muutetaan .kml muotoon ja se päivitetään MyMaps karttaan Seleniumin avulla.",
+  "extensions_title": "Selain lisäosat",
+  "extensions": "Jotta karttasovellus Spottimettä olisi mahdollisimman näppärä, tein sovelluslisäosan sitä varten. Lisäosa tuo Google Maps sivustolle napin, josta painamalla nykyinen näkymä aukeaa jo avoinna olevassa Spottimettä näkymässä tai uudessa välilehdessä. Lisäosa saatavilla ",
+  "extensions_firefox": "Firefoxille",
+  "extensions_chrome": "Chromelle",
+  "extensions_edge": "Edgelle",
+  " and ": " ja ",
+  "pwa_desc": "Haluaisin päästä sukeltamaan syvemmälle progressiiviset web-sovelluksien mahdollistamiin ominaisuuksiin. Toistaiseksi web sovelluksistani PWA yhteensopivia ovat tämä sivu, Skeittivideot.fi, Data Spottimettä ja Life of Jerry. Näistä Data Spottimettä ja Life of Jerry toimivat offline tilassa."
 
 }

@@ -38,4 +38,7 @@ class AudioPlayerTask extends BackgroundAudioTask {
   Future<void> toggle() async {
     _audioPlayer.playing ? onStop() : onStart({});
   }
+  Future<void> playOuch() async {
+    _audioPlayer.setAsset("assets/audio/hit.mp3");
+  }
 }

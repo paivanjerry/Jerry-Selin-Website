@@ -331,29 +331,7 @@ class _DeveloperPageState extends State<DeveloperPage> {
                                   TextSpan(text: tr("vue_desc_4")),
                                 ],
                               ),
-                              DevItem(
-                                width: w,
-                                titleIcon: Image.asset(
-                                  "assets/images/wordpress.png",
-                                  height: 40,
-                                ),
-                                title: "WordPress",
-                                description: [
-                                  TextSpan(text: tr("wordpress_desc")),
-                                  TextSpan(
-                                      text: tr("wordpress_desc_2"),
-                                      style: TextStyle(
-                                          color: Colors.deepPurple.shade300,
-                                          decoration: TextDecoration.underline),
-                                      recognizer: TapGestureRecognizer()
-                                        ..onTap = () {
-                                          html.window.open(
-                                              "https://katvelifestyle.fi",
-                                              "Katve Lifestyle");
-                                        }),
-                                  TextSpan(text: "."),
-                                ],
-                              ),
+
                               DevItem(
                                 width: w,
                                 titleIcon: Image.asset(
@@ -408,6 +386,17 @@ class _DeveloperPageState extends State<DeveloperPage> {
                                   TextSpan(text: "."),
                                 ],
                               ),
+                              DevItem(
+                                width: w,
+                                titleIcon: Image.asset(
+                                  "assets/images/pwa.png",
+                                  height: 40,
+                                ),
+                                title: "Progressive Web Apps",
+                                description: [
+                                  TextSpan(text: tr("pwa_desc")),
+                                ],
+                              ),
                             ],
                           ),
                         ),
@@ -460,11 +449,83 @@ class _DeveloperPageState extends State<DeveloperPage> {
                             ],
                           ),
                         ),
+
                         DevSector(
                           title: tr("other"),
                           child: Wrap(
                             spacing: 20,
                             children: [
+                              DevItem(
+                                width: w,
+                                titleIcon: Image.asset(
+                                  "assets/images/wordpress.png",
+                                  height: 40,
+                                ),
+                                title: "WordPress",
+                                description: [
+                                  TextSpan(text: tr("wordpress_desc")),
+                                  TextSpan(
+                                      text: tr("wordpress_desc_2"),
+                                      style: TextStyle(
+                                          color: Colors.deepPurple.shade300,
+                                          decoration: TextDecoration.underline),
+                                      recognizer: TapGestureRecognizer()
+                                        ..onTap = () {
+                                          html.window.open(
+                                              "https://katvelifestyle.fi",
+                                              "Katve Lifestyle");
+                                        }),
+                                  TextSpan(text: ".\n"),
+                                  TextSpan(text: tr("wordpress_desc_3")),
+                                ],
+                              ),
+                              DevItem(
+                                width: w,
+                                titleIcon: Image.asset(
+                                  "assets/images/browserextension.png",
+                                  height: 40,
+                                ),
+                                title: tr("extensions_title"),
+                                description: [
+                                  TextSpan(text: tr("extensions")),
+                                  TextSpan(
+                                      text: tr("extensions_chrome"),
+                                      style: TextStyle(
+                                          color: Colors.deepPurple.shade300,
+                                          decoration: TextDecoration.underline),
+                                      recognizer: TapGestureRecognizer()
+                                        ..onTap = () {
+                                          html.window.open(
+                                              "https://chrome.google.com/webstore/detail/spotforest-coordinate-ope/lgghhadfghmifkhbijnmamjeodkhefcl",
+                                              "Spotforest Extension Chrome");
+                                        }),
+                                  TextSpan(text: ", "),
+                                  TextSpan(
+                                      text: tr("extensions_firefox"),
+                                      style: TextStyle(
+                                          color: Colors.deepPurple.shade300,
+                                          decoration: TextDecoration.underline),
+                                      recognizer: TapGestureRecognizer()
+                                        ..onTap = () {
+                                          html.window.open(
+                                              "https://addons.mozilla.org/fi/firefox/addon/spotforest/",
+                                              "Spotforest Add-on Firefox");
+                                        }),
+                                  TextSpan(text: tr(" and ")),
+                                  TextSpan(
+                                      text: tr("extensions_edge"),
+                                      style: TextStyle(
+                                          color: Colors.deepPurple.shade300,
+                                          decoration: TextDecoration.underline),
+                                      recognizer: TapGestureRecognizer()
+                                        ..onTap = () {
+                                          html.window.open(
+                                              "https://microsoftedge.microsoft.com/addons/detail/spotforest-coordinate-ope/gajomgdjjhbjpphobmdliheknfnachcn",
+                                              "Spotforest Add-on Edge");
+                                        }),
+                                  TextSpan(text: "."),
+                                ],
+                              ),
                               DevItem(
                                 width: w,
                                 titleIcon: Image.asset(

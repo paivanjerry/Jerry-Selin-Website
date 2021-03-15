@@ -5,6 +5,7 @@ import 'dart:html' as html;
 
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
+import 'package:url_launcher/link.dart';
 
 class Footer extends StatefulWidget {
   @override
@@ -12,6 +13,7 @@ class Footer extends StatefulWidget {
 }
 
 class _FooterState extends State<Footer> {
+  String emailImage = "mail.png";
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -37,10 +39,18 @@ class _FooterState extends State<Footer> {
                         },
                         child: MouseRegion(
                             cursor: SystemMouseCursors.click,
+                            child:
+                            Link(
+                        uri: Uri.parse("https://www.instagram.com/jerryselin/"),
+                        builder: (BuildContext context, FollowLink followLink) => MouseRegion(
+                            cursor: SystemMouseCursors.click,
                             child: Image.asset(
                               "assets/images/instagram.png",
                               height: 40,
-                            ))),
+                            )
+                        )
+                    )
+                        )),
                   ),
                   Tooltip(
                     message: "Youtube",
@@ -52,10 +62,19 @@ class _FooterState extends State<Footer> {
                         },
                         child: MouseRegion(
                             cursor: SystemMouseCursors.click,
-                            child: Image.asset(
-                              "assets/images/youtube.png",
-                              height: 40,
-                            ))),
+
+                            child:
+                            Link(
+                                uri: Uri.parse("https://www.youtube.com/channel/UCkqvtxhI1RNz8VGO2nVyCPw"),
+                                builder: (BuildContext context, FollowLink followLink) => MouseRegion(
+                                    cursor: SystemMouseCursors.click,
+                                    child: Image.asset(
+                                      "assets/images/youtube.png",
+                                      height: 40,
+                                    )
+                                )
+                            )
+                        )),
                   ),
                   Tooltip(
                     message: "Github",
@@ -66,21 +85,41 @@ class _FooterState extends State<Footer> {
                         },
                         child: MouseRegion(
                             cursor: SystemMouseCursors.click,
-                            child: Image.asset(
-                              "assets/images/github.png",
-                              height: 40,
-                            ))),
+                            child:
+                            Link(
+                                uri: Uri.parse("https://github.com/paivanjerry"),
+                                builder: (BuildContext context, FollowLink followLink) => MouseRegion(
+                                    cursor: SystemMouseCursors.click,
+                                    child: Image.asset(
+                                      "assets/images/github.png",
+                                      height: 40,
+                                    )
+                                )
+                            )
+
+                        )),
                   ),
                   Tooltip(
                     message: tr("copy_email"),
                     child: GestureDetector(
                         onTap: () {
                           Clipboard.setData(ClipboardData(text: "jerry@jerrysel.in"));
+                          setState(() {
+                            emailImage = "check.png";
+                          });
+                          Future.delayed(const Duration(milliseconds: 1000), () {
+                            setState(() {
+                              emailImage = "mail.png";
+                            });
+
+                          });
+
+
                         },
                         child: MouseRegion(
                             cursor: SystemMouseCursors.click,
                             child: Image.asset(
-                              "assets/images/mail.png",
+                              "assets/images/" + emailImage,
                               height: 40,
                             ))),
                   ),
@@ -99,10 +138,18 @@ class _FooterState extends State<Footer> {
                         },
                         child: MouseRegion(
                             cursor: SystemMouseCursors.click,
-                            child: Image.asset(
-                              "assets/images/spottimetta.png",
-                              height: 40,
-                            ))),
+                            child:
+                            Link(
+                                uri: Uri.parse("https://spottimetta.fi/"),
+                                builder: (BuildContext context, FollowLink followLink) => MouseRegion(
+                                    cursor: SystemMouseCursors.click,
+                                    child: Image.asset(
+                                      "assets/images/spottimetta.png",
+                                      height: 40,
+                                    )
+                                )
+                            )
+                    )),
                   ),
                   Tooltip(
                     message: "Distant S.K.A.T.E.",
@@ -113,10 +160,19 @@ class _FooterState extends State<Footer> {
                         },
                         child: MouseRegion(
                             cursor: SystemMouseCursors.click,
-                            child: Image.asset(
-                              "assets/images/distantskate.png",
-                              height: 40,
-                            ))),
+                            child:
+                            Link(
+                                uri: Uri.parse("https://distantskate.com"),
+                                builder: (BuildContext context, FollowLink followLink) => MouseRegion(
+                                    cursor: SystemMouseCursors.click,
+                                    child: Image.asset(
+                                      "assets/images/distantskate.png",
+                                      height: 40,
+                                    )
+                                )
+                            )
+
+                        )),
                   ),
                   Tooltip(
                     message: "Skeittivideot.fi",
@@ -127,10 +183,19 @@ class _FooterState extends State<Footer> {
                         },
                         child: MouseRegion(
                             cursor: SystemMouseCursors.click,
-                            child: Image.asset(
-                              "assets/images/skeittivideotfi.png",
-                              height: 40,
-                            ))),
+                            child:
+
+                            Link(
+                                uri: Uri.parse("https://skeittivideot.fi"),
+                                builder: (BuildContext context, FollowLink followLink) => MouseRegion(
+                                    cursor: SystemMouseCursors.click,
+                                    child: Image.asset(
+                                      "assets/images/skeittivideotfi.png",
+                                      height: 40,
+                                    )
+                                )
+                            )
+                            )),
                   ),
                   Tooltip(
                     message: "Life of Jerry",
@@ -141,10 +206,18 @@ class _FooterState extends State<Footer> {
                         },
                         child: MouseRegion(
                             cursor: SystemMouseCursors.click,
-                            child: Image.asset(
-                              "assets/images/lifeofjerry.png",
-                              height: 40,
-                            ))),
+                            child:
+                            Link(
+                                uri: Uri.parse("https://lifeof.jerrysel.in"),
+                                builder: (BuildContext context, FollowLink followLink) => MouseRegion(
+                                    cursor: SystemMouseCursors.click,
+                                    child: Image.asset(
+                                      "assets/images/lifeofjerry.png",
+                                      height: 40,
+                                    )
+                                )
+                            )
+                            )),
                   ),
                 ],
               ),
@@ -160,5 +233,10 @@ class _FooterState extends State<Footer> {
         ],
       ),
     );
+  }
+  @override
+  void didChangeDependencies() {
+    precacheImage(AssetImage("assets/images/check.png"), context);
+    super.didChangeDependencies();
   }
 }
